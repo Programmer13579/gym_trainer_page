@@ -1,11 +1,11 @@
 {
-  "main.js": "/react-proyecto/static/js/main.0e2c01c2.chunk.js",
-  "main.js.map": "/react-proyecto/static/js/main.0e2c01c2.chunk.js.map",
-  "runtime~main.js": "/react-proyecto/static/js/runtime~main.4aaef749.js",
-  "runtime~main.js.map": "/react-proyecto/static/js/runtime~main.4aaef749.js.map",
-  "static/js/2.8808d590.chunk.js": "/react-proyecto/static/js/2.8808d590.chunk.js",
-  "static/js/2.8808d590.chunk.js.map": "/react-proyecto/static/js/2.8808d590.chunk.js.map",
-  "index.html": "/react-proyecto/index.html",
-  "precache-manifest.94ad1d63d714b6f23fbc0537d9e0c274.js": "/react-proyecto/precache-manifest.94ad1d63d714b6f23fbc0537d9e0c274.js",
-  "service-worker.js": "/react-proyecto/service-worker.js"
+  "main.js": "/gym_trainer_page/static/js/main.0e2c01c2.chunk.js",
+  "main.js.map": "/gym_trainer_page/static/js/main.0e2c01c2.chunk.js.map",
+  "runtime~main.js": "/gym_trainer_page/static/js/runtime~main.6fe23d91.js",
+  "runtime~main.js.map": "/gym_trainer_page/static/js/runtime~main.6fe23d91.js.map",
+  "static/js/2.8808d590.chunk.js": "/gym_trainer_page/static/js/2.8808d590.chunk.js",
+  "static/js/2.8808d590.chunk.js.map": "/gym_trainer_page/static/js/2.8808d590.chunk.js.map",
+  "index.html": "/gym_trainer_page/index.html",
+  "precache-manifest.ece9922f714951c93a682bb2bccd0e6e.js": "/gym_trainer_page/precache-manifest.ece9922f714951c93a682bb2bccd0e6e.js",
+  "service-worker.js": "/gym_trainer_page/service-worker.js"
 }
