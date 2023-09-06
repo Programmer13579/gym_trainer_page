@@ -2,7 +2,7 @@
   "name": "react-basicos",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ibrahimeric.github.io/react-proyecto/build",
+  "homepage": "https://ibrahimeric.github.io/react-proyecto",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,6 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
