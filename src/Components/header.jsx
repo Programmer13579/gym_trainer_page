@@ -1,8 +1,9 @@
 import React from 'react'
+import "../Styles/header.css"
 
 const header = () => {
     return (
-        <div>
+        <div className='header'>
             header
         </div>
     )

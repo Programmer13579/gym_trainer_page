@@ -35,25 +35,23 @@ const main = () => {
 
     return (
         <div className='main'>
-            <div className="slider">
-                <div className="containerSliderPrincipal">
-                    <div className="sliderPrincipal" id='sliderPrincipal'>
-                        {images.length ? images.map((image, index) => (
-                        // Creamos un div y le añadimos la clase card y el id del producto con product.id
-                        <div className={`sliderSection ${animation === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
-                            <img src={image} alt="" className={'imgSliderPrincipal'} />
-                        </div>
-                        )): (
-                        <div className="sliderNotFound">
-                            <h1>"La Familia"<br/>Distribuidora</h1>
-                        </div>
-                        )}
+            <div className="containerSliderPrincipal">
+                <div className="sliderPrincipal" id='sliderPrincipal'>
+                    {images.length ? images.map((image, index) => (
+                    // Creamos un div y le añadimos la clase card y el id del producto con product.id
+                    <div className={`sliderSection ${animation === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
+                        <img src={image} alt="" className={'imgSliderPrincipal'} />
                     </div>
-                    {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
-                    <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                    <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><p>&lt;</p></div>
-                    <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><p>&gt;</p></div>
+                    )): (
+                    <div className="sliderNotFound">
+                        <h1>"La Familia"<br/>Distribuidora</h1>
+                    </div>
+                    )}
                 </div>
+                {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
+                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
+                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><p>&lt;</p></div>
+                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><p>&gt;</p></div>
             </div>
         </div>
     )

@@ -1,0 +1,25 @@
+.nivelContainer{
+    background-color: rgb(135, 135, 135);
+    width: 97%;
+    margin: 15px auto;
+    border: solid 3px black;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.nivelContainer .info{
+    width: 85%;
+    margin: 10px auto;
+    border-radius: 20px;
+    display: flex;
+}
+.info img{
+    border: solid 1px black;
+    object-fit: cover;
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+}
+.info p{
+    font-size: 22px;
+}
