@@ -1,11 +1,16 @@
 {
-  "main.js": "/gym_trainer_page/static/js/main.0e2c01c2.chunk.js",
-  "main.js.map": "/gym_trainer_page/static/js/main.0e2c01c2.chunk.js.map",
+  "main.css": "/gym_trainer_page/static/css/main.cbc36f44.chunk.css",
+  "main.js": "/gym_trainer_page/static/js/main.3276a96b.chunk.js",
+  "main.js.map": "/gym_trainer_page/static/js/main.3276a96b.chunk.js.map",
   "runtime~main.js": "/gym_trainer_page/static/js/runtime~main.6fe23d91.js",
   "runtime~main.js.map": "/gym_trainer_page/static/js/runtime~main.6fe23d91.js.map",
-  "static/js/2.8808d590.chunk.js": "/gym_trainer_page/static/js/2.8808d590.chunk.js",
-  "static/js/2.8808d590.chunk.js.map": "/gym_trainer_page/static/js/2.8808d590.chunk.js.map",
+  "static/js/2.e503e441.chunk.js": "/gym_trainer_page/static/js/2.e503e441.chunk.js",
+  "static/js/2.e503e441.chunk.js.map": "/gym_trainer_page/static/js/2.e503e441.chunk.js.map",
   "index.html": "/gym_trainer_page/index.html",
-  "precache-manifest.ece9922f714951c93a682bb2bccd0e6e.js": "/gym_trainer_page/precache-manifest.ece9922f714951c93a682bb2bccd0e6e.js",
-  "service-worker.js": "/gym_trainer_page/service-worker.js"
+  "precache-manifest.59f44560b83a8acfabae87868125fb68.js": "/gym_trainer_page/precache-manifest.59f44560b83a8acfabae87868125fb68.js",
+  "service-worker.js": "/gym_trainer_page/service-worker.js",
+  "static/css/main.cbc36f44.chunk.css.map": "/gym_trainer_page/static/css/main.cbc36f44.chunk.css.map",
+  "static/media/imagen5.webp": "/gym_trainer_page/static/media/imagen5.7f74c3fd.webp",
+  "static/media/imagen6.webp": "/gym_trainer_page/static/media/imagen6.d1f115d9.webp",
+  "static/media/imagen7.webp": "/gym_trainer_page/static/media/imagen7.3767a329.webp"
 }
