@@ -1,0 +1,81 @@
+.slider{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+
+
+
+
+.containerSliderPrincipal{
+    /* box-shadow: 0px 1px 5px 3px rgba(79, 79, 79, 0.5);
+    border-radius: 20px; */
+    width: 100vw;
+    height: 50vw;
+    max-height: 100vh;
+    overflow: hidden;
+    margin: 10px auto;
+    position: relative;
+}
+.imgSliderPrincipal{
+    user-select: none;
+    pointer-events: none;
+    width: 100vw;
+    height: 50vw;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.sliderPrincipal{
+    background-color: #e7e7e7;
+    height: 50vw;
+    max-height: 100vh;
+}
+.sliderSection{
+    display: none;
+}
+.carrouselActive{
+    display: block;
+    visibility: visible;
+    animation: imgScale linear .4s forwards;
+}
+@keyframes imgScale {
+    0%{opacity: .5;}
+    
+    100%{opacity: 1;}
+}
+
+.containerBtn{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    place-items: center;
+    display: grid;
+    height: 100%;
+    width: 30%;
+}
+.containerBtn p{
+    user-select: none;
+    Color: rgba(255, 255, 255, 0.7);
+    width: 40px;
+    font-size: 60px;
+    font-family: monospace;
+}
+.containerBtn:hover p{
+    Color: rgba(255, 255, 255);
+}
+.sliderbtnLeft{
+    left: 0;
+}
+.sliderbtnRight{
+    right: 0;
+}
+.sliderbtnLeft p{
+    position: absolute;
+    left: 10px;
+}
+.sliderbtnRight p{
+    position: absolute;
+    right: 10px;
+    
+}
