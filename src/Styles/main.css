@@ -26,7 +26,7 @@
     object-fit: cover;
 }
 .sliderPrincipal{
-    background-color: #e7e7e7;
+    background-color: rgb(24, 24, 26);
     height: 50vw;
     max-height: 100vh;
 }

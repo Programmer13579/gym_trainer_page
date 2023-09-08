@@ -2,6 +2,18 @@
     background-color: rgb(8, 8, 8);
     padding: 15px 0;
 }
+.container > h2, .container > h3{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    width: max-content;
+    margin: 10px auto;
+}
+.container > h3{
+    font-size: 30px;
+    margin-left: 2.5%;
+    text-decoration: underline;
+}
 .nivelContainer{
     background-color: rgb(16, 17, 18);
     width: 97%;
@@ -32,23 +44,36 @@
     border-radius: 20px;
 }
 .nivelSlider{
-    height: 300px;
+    
 }
 
 
 .nivelSlider .containerSliderPrincipal .sliderPrincipal .sliderSection img{
-    height: 300px;
+    height: auto;
+    max-height: 300px;
     object-fit: contain;
+    
     border: solid 1px black;
     border-radius: 20px;
     background-color: rgb(24, 24, 26);
+    pointer-events: all;
+    
+}
+.nivelSlider .containerSliderPrincipal .sliderPrincipal .sliderSection{
+    
+}
+.nivelSlider .containerSliderPrincipal .sliderPrincipal{
+    background-color: transparent;
+    height: 300px;
+    max-height: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nivelSlider .containerSliderPrincipal{
     height: 300px;
 }
-.nivelSlider .containerSliderPrincipal .sliderPrincipal{
-    background-color: transparent;
-}
+
 
 
 
@@ -68,7 +93,7 @@
         display: block;
     }
     .imagen{
-        max-width: 100%;
+        width: 100%;
     }
     .info{
         width: 100%;
