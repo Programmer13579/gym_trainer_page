@@ -1,7 +1,11 @@
+.container{
+    background-color: rgb(8, 8, 8);
+    padding: 15px 0;
+}
 .nivelContainer{
-    background-color: rgb(26, 28, 29);
+    background-color: rgb(16, 17, 18);
     width: 97%;
-    margin: 15px auto;
+    margin: auto;
     border: solid 3px black;
     border-radius: 20px;
     overflow: hidden;
@@ -28,12 +32,13 @@
     border-radius: 20px;
 }
 .info{
+    padding: 15px 0;
     margin: auto;
     margin-right: 0;
     font-size: 22px;
     width: 70%;
 }
-.info p{
+.info p, .info h2{
     width: 90%;
     margin: 0 auto;
 }

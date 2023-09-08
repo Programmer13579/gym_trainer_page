@@ -5,31 +5,31 @@ import imagen6 from '../img/imagen6.webp'
 import imagen7 from '../img/imagen7.webp'
 
 const main = () => {
-    const images = [imagen5, imagen6, imagen7];
-    const [animation, setAnimation] = useState(0);
-    const [timeInterval, setTimeInterval] = useState(15000);
-  
-    function nextImage(time){
-        setTimeInterval(time)
-        if(animation !== images.length - 1)
-            setAnimation(animation + 1)
+    const images_1 = [imagen5, imagen6, imagen7];
+    const [animation_1, setAnimation_1] = useState(0);
+    const [timeInterval_1, setTimeInterval_1] = useState(15000);
+    
+    function nextImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
+        p_setInterval(p_time)
+        if(p_animation !== p_images.length - 1)
+            p_setAnimation(p_animation + 1)
         else
-            setAnimation(0)
+            p_setAnimation(0)
     }
     
-    function prevImage(time){
-        setTimeInterval(time)
-        if(animation !== 0)
-            setAnimation(animation - 1)
+    function prevImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
+        p_setInterval(p_time)
+        if(p_animation !== 0)
+            p_setAnimation(p_animation - 1)
         else
-            setAnimation(images.length - 1)
+            p_setAnimation(p_images.length - 1)
     }
-  
-  
+
+
     useEffect(() => {
         const interval = setInterval(() => {
-            nextImage(15000);
-        }, timeInterval);
+            nextImage(5000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
+        }, timeInterval_1);
         return() => clearInterval(interval);
     });
 
@@ -37,9 +37,9 @@ const main = () => {
         <div className='main'>
             <div className="containerSliderPrincipal">
                 <div className="sliderPrincipal" id='sliderPrincipal'>
-                    {images.length ? images.map((image, index) => (
+                    {images_1.length ? images_1.map((image, index) => (
                     // Creamos un div y le añadimos la clase card y el id del producto con product.id
-                    <div className={`sliderSection ${animation === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
+                    <div className={`sliderSection ${animation_1 === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
                         <img src={image} alt="" className={'imgSliderPrincipal'} />
                     </div>
                     )): (
@@ -50,8 +50,8 @@ const main = () => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><p>&lt;</p></div>
-                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><p>&gt;</p></div>
+                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(5000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&lt;</p></div>
+                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(5000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&gt;</p></div>
             </div>
         </div>
     )
