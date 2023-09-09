@@ -28,7 +28,7 @@ const main = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            nextImage(5000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
+            nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
         }, timeInterval_1);
         return() => clearInterval(interval);
     });
@@ -50,8 +50,8 @@ const main = () => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(5000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&lt;</p></div>
-                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(5000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&gt;</p></div>
+                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&lt;</p></div>
+                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&gt;</p></div>
             </div>
         </div>
     )

@@ -11,11 +11,9 @@ import imagen8 from "../img/Nivel-1_(8).jpg"
 import imagen9 from "../img/Nivel-1_(9).jpg"
 
 const Nivel_1 = () => {
-    // const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
     const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
     const [animation_1, setAnimation_1] = useState(0);
-    // const [timeInterval_1, setTimeInterval_1] = useState(10000);
-    const [timeInterval_1, setTimeInterval_1] = useState(3000);
+    const [timeInterval_1, setTimeInterval_1] = useState(10000);
     
     function nextImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
         p_setInterval(p_time)
@@ -36,8 +34,7 @@ const Nivel_1 = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            // nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
-            nextImage(3000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
+            nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
         }, timeInterval_1);
         return() => clearInterval(interval);
     });
