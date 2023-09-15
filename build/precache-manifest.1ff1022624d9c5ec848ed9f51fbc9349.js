@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "95b610ac4b83914d08b7",
+    "revision": "7e289ff681c6fcb5c07d",
     "url": "/gym_trainer_page/static/css/main.3dc4cceb.chunk.css"
   },
   {
-    "revision": "95b610ac4b83914d08b7",
-    "url": "/gym_trainer_page/static/js/main.31fb9b9d.chunk.js"
+    "revision": "7e289ff681c6fcb5c07d",
+    "url": "/gym_trainer_page/static/js/main.90fe265d.chunk.js"
   },
   {
     "revision": "c9d5aab023f66adc498f",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/media/Nivel-1_(9).1a525836.jpg"
   },
   {
-    "revision": "2cf554e70607fdd1a0c0b4e57520b10b",
+    "revision": "8491a2f46135a368d8ef0578b4761896",
     "url": "/gym_trainer_page/index.html"
   }
 ];

@@ -1,18 +1,20 @@
-.container{
+.nivel_principal{
     background-color: rgb(8, 8, 8);
     padding: 15px 0;
+    text-align: center;
 }
-.container > h2, .container > h3{
-    font-size: 40px;
+.nivel_principal > h2, .nivel_principal > h3{
+    font-size: 45px;
     color: white;
     text-align: center;
     width: max-content;
     margin: 10px auto;
 }
-.container > h3{
+.nivel_principal > h3{
     font-size: 30px;
     margin-left: 2.5%;
     text-decoration: underline;
+    font-variant: small-caps;
 }
 .nivelContainer{
     background-color: rgb(40, 40, 40);
@@ -63,10 +65,6 @@
 .nivelSlider .containerSliderPrincipal{
     height: 300px;
 }
-
-
-
-
 .info{
     padding: 15px 0;
     margin: auto;
@@ -78,6 +76,11 @@
     width: 90%;
     margin: 0 auto;
 }
+.b_niveles{
+    padding: 10px 20px;
+    font-variant: small-caps;
+    line-height: 100px;
+}
 @media screen and (max-width: 950px) {
     .nivelContainer .datos{
         display: block;
@@ -87,5 +90,13 @@
     }
     .info{
         width: 100%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .nivel_principal > h2{
+        font-size: 35px;
+    }
+    .nivel_principal > h3{
+        font-size: 25px;
     }
 }

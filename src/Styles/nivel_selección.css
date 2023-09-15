@@ -1,24 +1,31 @@
-.nivel_selección{
-    background-color: gray;
+.nivel_seleccion{
+    background-color: rgb(8, 8, 8);
+}
+.nivel_seleccion h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+.button_seleccion{
     height: 50vh;
     min-height: 400px;
+    max-width: 900px;
+    margin: auto;
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
-.nivel_selección button{
-    margin: auto;
-    height: 50px;
-    width: 150px;
-    border-radius: 10px;
-    border: none;
+.b_seleccion{
+    padding: 0;
+    font-variant: small-caps;
+    line-height: 60px;
 }
-@media screen and (max-width: 400px) {
-    .nivel_selección{
+@media screen and (max-width: 450px) {
+    .button_seleccion{
         grid-template-columns: 1fr;
     }
-    .nivel_selección button{
-        height: 60px;
-        width: 200px;
-        font-size: 20px;
+    .nivel_seleccion h2{
+        font-size: 30px;
     }
 }

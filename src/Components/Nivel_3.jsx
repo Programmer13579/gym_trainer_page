@@ -41,7 +41,7 @@ const Nivel_1 = () => {
     });
     return (
         <div className="nivel_principal">
-            <h2>NIVEL 1</h2>
+            <h2>NIVEL 3</h2>
             <hr />
             <h3>Alimentación</h3>
             <div className='nivelContainer'>
@@ -125,7 +125,7 @@ const Nivel_1 = () => {
                     </div>
                 </div>
             </div>
-            <Link className="button_nivel b_niveles" to="/nivel_2">Siguiente nivel</Link>
+            <Link className="button_nivel b_niveles" to="/nivel_4">Siguiente nivel</Link>
         </div>
     )
 }

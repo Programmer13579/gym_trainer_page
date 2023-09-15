@@ -1,0 +1,54 @@
+:root{
+  --fondo: #000;
+}
+.Lcontainer{
+  flex-grow: 1;
+  min-height: 80vh;
+  width: 100%;
+  background-color: var(--fondo);
+  place-content: center;
+  display: grid;
+  overflow: hidden;
+}
+.loader {
+  font-size: 10px;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: -moz-linear-gradient(left, #fff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #fff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #fff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #fff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #fff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  animation: load3 1.4s infinite linear;
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background-color: var(--fondo);
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+@keyframes load3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
