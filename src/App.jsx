@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css"
 import Loading from './Components/Loading'
+const Error404 = lazy(() => import('./Components/Error404'));
 const Header = lazy(() => import('./Components/header'));
 const Main = lazy(() => import('./Components/main'));
 const Footer = lazy(() => import('./Components/footer'));
@@ -43,6 +44,11 @@ function App() {
                         <Route path="nivel_4" element={<>
                             <Suspense fallback={<Loading/>}>
                                 <Nivel4/>
+                            </Suspense>
+                        </>}/>
+                        <Route path="*" element={<>
+                            <Suspense fallback={<Loading/>}>
+                                <Error404/>
                             </Suspense>
                         </>}/>
                     </Routes>
