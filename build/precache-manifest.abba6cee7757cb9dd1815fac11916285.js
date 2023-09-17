@@ -1,79 +1,87 @@
 self.__precacheManifest = [
   {
-    "revision": "ca0d3870e750970d7489",
-    "url": "/gym_trainer_page/static/css/main.969ae0ae.chunk.css"
+    "revision": "ae74b48babc41a21c564",
+    "url": "/gym_trainer_page/static/css/main.9376bee7.chunk.css"
   },
   {
-    "revision": "ca0d3870e750970d7489",
-    "url": "/gym_trainer_page/static/js/main.fe858267.chunk.js"
+    "revision": "ae74b48babc41a21c564",
+    "url": "/gym_trainer_page/static/js/main.12449acb.chunk.js"
   },
   {
-    "revision": "06c866a602ef2c35e9c2",
-    "url": "/gym_trainer_page/static/js/runtime~main.0a78a4dc.js"
+    "revision": "bb8b44d7e35c9a5298a3",
+    "url": "/gym_trainer_page/static/js/runtime~main.6f3ad36b.js"
   },
   {
     "revision": "526796264a49a5e5e592",
     "url": "/gym_trainer_page/static/js/2.e28c993f.chunk.js"
   },
   {
-    "revision": "fa4f46a85fe8e08d9fe5",
+    "revision": "7660542665c4466871c2",
     "url": "/gym_trainer_page/static/css/3.e504cb99.chunk.css"
   },
   {
-    "revision": "fa4f46a85fe8e08d9fe5",
-    "url": "/gym_trainer_page/static/js/3.14c9063b.chunk.js"
+    "revision": "7660542665c4466871c2",
+    "url": "/gym_trainer_page/static/js/3.4718b3a3.chunk.js"
   },
   {
-    "revision": "d60683e9e5e0fb9f282b",
+    "revision": "de7a245fc1a3856269b2",
     "url": "/gym_trainer_page/static/css/4.e504cb99.chunk.css"
   },
   {
-    "revision": "d60683e9e5e0fb9f282b",
-    "url": "/gym_trainer_page/static/js/4.21ae46ec.chunk.js"
+    "revision": "de7a245fc1a3856269b2",
+    "url": "/gym_trainer_page/static/js/4.5c43aae2.chunk.js"
   },
   {
-    "revision": "034803ce21bb59d2ee77",
+    "revision": "4d8d4863666ffd0081c0",
     "url": "/gym_trainer_page/static/css/5.e504cb99.chunk.css"
   },
   {
-    "revision": "034803ce21bb59d2ee77",
-    "url": "/gym_trainer_page/static/js/5.c4d36b86.chunk.js"
+    "revision": "4d8d4863666ffd0081c0",
+    "url": "/gym_trainer_page/static/js/5.ab53a251.chunk.js"
   },
   {
-    "revision": "7c3e4deb3bd3f5727274",
+    "revision": "0078adf0d1c47b7b3715",
     "url": "/gym_trainer_page/static/css/6.e504cb99.chunk.css"
   },
   {
-    "revision": "7c3e4deb3bd3f5727274",
-    "url": "/gym_trainer_page/static/js/6.a83c9760.chunk.js"
+    "revision": "0078adf0d1c47b7b3715",
+    "url": "/gym_trainer_page/static/js/6.e60a6f91.chunk.js"
   },
   {
-    "revision": "213d873240d50356cfc8",
-    "url": "/gym_trainer_page/static/js/7.9852ab0b.chunk.js"
+    "revision": "058acf90b3897c338ef5",
+    "url": "/gym_trainer_page/static/js/7.97e36b6f.chunk.js"
   },
   {
-    "revision": "8a30561e0beba208ad04",
+    "revision": "f986fb5e513c2d227517",
     "url": "/gym_trainer_page/static/css/8.c4b7d710.chunk.css"
   },
   {
-    "revision": "8a30561e0beba208ad04",
-    "url": "/gym_trainer_page/static/js/8.49aa2424.chunk.js"
+    "revision": "f986fb5e513c2d227517",
+    "url": "/gym_trainer_page/static/js/8.01befd4b.chunk.js"
   },
   {
-    "revision": "202fe4e11a8b669d8913",
-    "url": "/gym_trainer_page/static/css/9.85aa5173.chunk.css"
+    "revision": "d5fd6002242ccac4ce07",
+    "url": "/gym_trainer_page/static/css/9.0704a836.chunk.css"
   },
   {
-    "revision": "202fe4e11a8b669d8913",
-    "url": "/gym_trainer_page/static/js/9.c13ec108.chunk.js"
+    "revision": "d5fd6002242ccac4ce07",
+    "url": "/gym_trainer_page/static/js/9.6ffcb239.chunk.js"
   },
   {
-    "revision": "884c25e8c4454095eec2",
-    "url": "/gym_trainer_page/static/js/10.39ac5bc3.chunk.js"
+    "revision": "b812276dfa4c11be5a1b",
+    "url": "/gym_trainer_page/static/css/10.85aa5173.chunk.css"
   },
   {
-    "revision": "645d2d0f7b0ed805761a",
-    "url": "/gym_trainer_page/static/js/11.b4c4a44e.chunk.js"
+    "revision": "b812276dfa4c11be5a1b",
+    "url": "/gym_trainer_page/static/js/10.560ba60b.chunk.js"
+  },
+  {
+    "revision": "076909d42b9fe18f0fa5",
+    "url": "/gym_trainer_page/static/js/11.d5b6afa7.chunk.js"
+  },
+  {
+    "revision": "d2810e5b7462bb929abe",
+    "url": "/gym_trainer_page/static/js/12.c94a6ee7.chunk.js"
   },
   {
     "revision": "b0a5e3b67ea5fa279c0e3ed018c9072f",
@@ -124,7 +132,7 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/media/imagen7.3767a329.webp"
   },
   {
-    "revision": "61f63ecdc615aec4b094297ab506b8c6",
+    "revision": "3ee0177b3931b656b9ba1a9082388138",
     "url": "/gym_trainer_page/index.html"
   }
 ];

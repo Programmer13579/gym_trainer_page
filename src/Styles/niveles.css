@@ -1,23 +1,23 @@
 .nivel_principal{
-    background-color: rgb(8, 8, 8);
+    background-color: #181818;
     padding: 15px 0;
     text-align: center;
 }
 .nivel_principal > h2, .nivel_principal > h3{
     font-size: 45px;
-    color: white;
+    color: rgb(10, 200, 238);
     text-align: center;
     width: max-content;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 .nivel_principal > h3{
+    color: #fff;
     font-size: 30px;
-    margin-left: 2.5%;
     text-decoration: underline;
     font-variant: small-caps;
 }
 .nivelContainer{
-    background-color: rgb(40, 40, 40);
+    background-color: #1f1f1f;
     width: 97%;
     margin: auto;
     border: solid 3px black;
@@ -28,6 +28,7 @@
 }
 .nivelContainer .datos{
     width: 95%;
+    max-width: 1400px;
     margin: 10px auto;
     border-radius: 20px;
     display: flex;
@@ -35,6 +36,7 @@
 .imagen{
     display: block;
     width: 30%;
+    max-width: 400px;
     max-height: 300px;
     margin: auto;
 }
@@ -74,6 +76,7 @@
 }
 .info p, .info h2{
     width: 90%;
+    max-width: 840px;
     margin: 0 auto;
 }
 .b_niveles{

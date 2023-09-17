@@ -85,7 +85,6 @@ const Nivel_1 = () => {
                     </div>
                 </div>
             </div>
-            <hr />
             <h3>Movimiento</h3>
             <div className='nivelContainer'>
                 <div className="datos">
@@ -111,7 +110,6 @@ const Nivel_1 = () => {
                     </div>
                 </div>
             </div>
-            <hr />
             <h3>Descanso</h3>
             <div className='nivelContainer'>
                 <div className="datos">
