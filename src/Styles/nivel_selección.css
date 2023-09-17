@@ -1,20 +1,19 @@
 .nivel_seleccion{
-    background-color: rgb(8, 8, 8);
+    background-color: #181818;
+    padding: 20px 0;
 }
 .nivel_seleccion h2{
-    font-size: 50px;
-    color: #fff;
+    font-size: 2.85rem;
+    color: rgb(10, 200, 238);
     text-align: center;
     font-variant: small-caps;
-    text-decoration: underline;
 }
 .button_seleccion{
-    height: 50vh;
     min-height: 400px;
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 .b_seleccion{
     padding: 0;
@@ -24,8 +23,5 @@
 @media screen and (max-width: 450px) {
     .button_seleccion{
         grid-template-columns: 1fr;
-    }
-    .nivel_seleccion h2{
-        font-size: 30px;
     }
 }

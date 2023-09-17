@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useRef } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css"
 import Loading from './Components/Loading'
@@ -13,42 +13,42 @@ const Nivel3 = lazy(() => import('./Components/Nivel_3'));
 const Nivel4 = lazy(() => import('./Components/Nivel_4'));
 
 function App() {
-
+    const sectionNivel = useRef(null);
     return (
         <div className="App">
             <Router>
                 <Suspense fallback={<Loading/>}>
                     <Header/>
-                    <Main/>
+                    <Main sectionNivel = {sectionNivel}/>
                     <Routes>
                         <Route path="/" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <NivelSeleccion/>
+                                <NivelSeleccion sectionNivel = {sectionNivel}/>
                             </Suspense>
                         </>}/>
                         <Route path="nivel_1" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <Nivel1/>
+                                <Nivel1 sectionNivel = {sectionNivel}/>
                             </Suspense>
                         </>}/>
                         <Route path="nivel_2" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <Nivel2/>
+                                <Nivel2 sectionNivel = {sectionNivel}/>
                             </Suspense>
                         </>}/>
                         <Route path="nivel_3" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <Nivel3/>
+                                <Nivel3 sectionNivel = {sectionNivel}/>
                             </Suspense>
                         </>}/>
                         <Route path="nivel_4" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <Nivel4/>
+                                <Nivel4 sectionNivel = {sectionNivel}/>
                             </Suspense>
                         </>}/>
                         <Route path="*" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <Error404/>
+                                <Error404 sectionNivel = {sectionNivel}/>
                             </Suspense>
                         </>}/>
                     </Routes>

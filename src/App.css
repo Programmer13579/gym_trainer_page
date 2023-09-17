@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-
 *{
     font-family: 'Sora', sans-serif;
     box-sizing: border-box;
     margin:0;
     padding:0;
-
-
 }
-
+html{
+    font-size: clamp(12px,.8rem + .25vw,16px);
+}
 body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 .button_nivel{
     text-decoration: none;
     color: #000;
@@ -26,7 +24,7 @@ body{
     width: 200px;
     border-radius: 10px;
     border: none;
-    font-size: 30px;
+    font-size: 1.88rem;
 }
 .button_nivel{
     border: none;
@@ -37,18 +35,13 @@ body{
     transition: all 0.3s ease;
 }
 .button_nivel:hover{
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
     transform: scaleX(1.03);
-    border-radius: 10px;
 }
-
-
-
 @media screen and (max-width: 450px) {
     .button_nivel{
         height: 60px;
         max-width: 200px;
         width: 100%;
-        font-size: 25px;
     }
 }

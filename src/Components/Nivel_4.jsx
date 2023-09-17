@@ -11,7 +11,7 @@ import imagen8 from "../img/Nivel-1_(8).jpg"
 import imagen9 from "../img/Nivel-1_(9).jpg"
 import { Link } from 'react-router-dom';
 
-const Nivel_1 = () => {
+const Nivel_4 = ({sectionNivel}) => {
     const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
     const [animation_1, setAnimation_1] = useState(0);
     const [timeInterval_1, setTimeInterval_1] = useState(10000);
@@ -32,13 +32,18 @@ const Nivel_1 = () => {
             p_setAnimation(p_images.length - 1)
     }
 
-
     useEffect(() => {
         const interval = setInterval(() => {
             nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
         }, timeInterval_1);
         return() => clearInterval(interval);
     });
+
+    const scrollToSection = (ref) => {
+        if (ref.current) {
+          ref.current.scrollIntoView();
+        }
+    };
     return (
         <div className="nivel_principal">
             <h2>NIVEL 4</h2>
@@ -54,11 +59,11 @@ const Nivel_1 = () => {
                                     <div className={`sliderSection ${animation_1 === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
                                         <img src={image} alt="" className={'imgSliderPrincipal'} />
                                     </div>
-                                    )): (
+                                )): (
                                     <div className="sliderNotFound">
-                                        <h1>"La Familia"<br/>Distribuidora</h1>
+                                        <h5>Error al cargar las imagenes</h5>
                                     </div>
-                                    )}
+                                )}
                             </div>
                             {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                             <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
@@ -67,7 +72,7 @@ const Nivel_1 = () => {
                         </div>
                     </div>
                     <div className="info">
-                        <h2>CLASIFICACIÓN DE LOS ALIMENTOS</h2>
+                        <h5>CLASIFICACIÓN DE LOS ALIMENTOS</h5>
                         <br />
                         <p>El primer paso y el más significativo a la hora de mejorar nuestra alimentación es saber clasificar los alimentos.<br /><br />TAREA: Tu alimentación tendría que basarse en un 80% o más de alimentos reales o mínimamente procesados, mientras que el 20% o menos, del total de alimentos consumidos a diario, pueden ser procesasos. A los ultaprocesados intentaremos eliminarlos por completo.</p>
                     </div>
@@ -79,7 +84,7 @@ const Nivel_1 = () => {
                         <img src={imagen2} alt="" />
                     </div>
                     <div className="info">
-                        <h2>NO POLARIZAR</h2>
+                        <h5>NO POLARIZAR</h5>
                         <br />
                         <p>En lo que respecta a la alimentación y entrenamiento no debemos pensar en blanco o negro, sino en grises, porque los buenos caminos no se encuentran en los extremos.<br /><br />TAREA: Incluir ese 20% o menos de alimentos procesados o ultraprocesados en las situaciones que lo ameriten.</p>
                     </div>
@@ -92,7 +97,7 @@ const Nivel_1 = () => {
                         <img src={imagen3} alt="" />
                     </div>
                     <div className="info">
-                        <h2>ACTIVIDAD Y EJERCICIO FÍSICO</h2>
+                        <h5>ACTIVIDAD Y EJERCICIO FÍSICO</h5>
                         <br />
                         <p>Saber diferenciar la actividad física del ejercicio físico es el primer paso para sistematizar el movimiento.<br /><br />TAREA: Hacer un listado de tareas de movimiento, en el cuál colocaremos cuántos entrenamientos realizaremos a la semana. Por ejemplo: ir al gimnasio 3 veces veces por semana, ir a caminar 1 vez veces por semana y nadar 2 veces por semana.</p>
                     </div>
@@ -104,7 +109,7 @@ const Nivel_1 = () => {
                         <img src={imagen4} alt="" />
                     </div>
                     <div className="info">
-                        <h2>¿QUÉ QUIERO ENTRENAR?</h2>
+                        <h5>¿QUÉ QUIERO ENTRENAR?</h5>
                         <br />
                         <p>Debemos conocer las capacidades físicas básicas para direccionar el entrenamiento dependiendo nuestros objetivos.<br /><br />TAREA: Dar dirección a nuestro entrenamiento es ser específicos a la capacidad a mejorar, por eso nos centraremos a estimular una de ellas a la vez. Vamos a proponernos un lapso de tiempo en meses para trabajarla. Por ejemplo: 2 meses (Cuando se cumpla el tiempo y nos adaptemos a él podemos sumar más capacidades).</p>
                     </div>
@@ -117,15 +122,15 @@ const Nivel_1 = () => {
                         <img src={imagen5} alt="" />
                     </div>
                     <div className="info">
-                        <h2>LA IMPORTANCIA DEL DESCANSO</h2>
+                        <h5>LA IMPORTANCIA DEL DESCANSO</h5>
                         <br />
                         <p>Hay que darle la importancia que se merece al descanso. Existe una relación inversamente proporcional entre la cantidad de estrés y de descanso que debemos respetar.<br /><br />TAREA: Programar los días de descanso relacionandolos con los días de entrenamiento. Por ejemplo, si un lunes tengo un día cargado de movimiento (ir al gimnasio y entrenar mi deporte) el martes podría descansar en inactividad o simplemente salir a caminar (descanso activo).</p>
                     </div>
                 </div>
             </div>
-            <Link className="button_nivel b_niveles" to="/">Volver al inicio</Link>
+            <Link className="button_nivel b_niveles" to="/" onClick={scrollToSection(sectionNivel)}>Volver al inicio</Link>
         </div>
     )
 }
 
-export default Nivel_1
+export default Nivel_4
