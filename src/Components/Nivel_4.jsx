@@ -44,6 +44,7 @@ const Nivel_4 = ({sectionNivel}) => {
           ref.current.scrollIntoView();
         }
     };
+
     return (
         <div className="nivel_principal">
             <h2>NIVEL 4</h2>
@@ -55,7 +56,6 @@ const Nivel_4 = ({sectionNivel}) => {
                         <div className="containerSliderPrincipal">
                             <div className="sliderPrincipal" id='sliderPrincipal'>
                                 {images_1.length ? images_1.map((image, index) => (
-                                // Creamos un div y le añadimos la clase card y el id del producto con product.id
                                     <div className={`sliderSection ${animation_1 === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
                                         <img src={image} alt="" className={'imgSliderPrincipal'} />
                                     </div>
@@ -65,8 +65,6 @@ const Nivel_4 = ({sectionNivel}) => {
                                     </div>
                                 )}
                             </div>
-                            {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
-                            <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
                             <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&lt;</p></div>
                             <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&gt;</p></div>
                         </div>
@@ -75,6 +73,8 @@ const Nivel_4 = ({sectionNivel}) => {
                         <h5>CLASIFICACIÓN DE LOS ALIMENTOS</h5>
                         <br />
                         <p>El primer paso y el más significativo a la hora de mejorar nuestra alimentación es saber clasificar los alimentos.<br /><br />TAREA: Tu alimentación tendría que basarse en un 80% o más de alimentos reales o mínimamente procesados, mientras que el 20% o menos, del total de alimentos consumidos a diario, pueden ser procesasos. A los ultaprocesados intentaremos eliminarlos por completo.</p>
+                        <br />
+                        <a href="https://www.instagram.com/p/CrM0-NXuTN5/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
@@ -87,6 +87,8 @@ const Nivel_4 = ({sectionNivel}) => {
                         <h5>NO POLARIZAR</h5>
                         <br />
                         <p>En lo que respecta a la alimentación y entrenamiento no debemos pensar en blanco o negro, sino en grises, porque los buenos caminos no se encuentran en los extremos.<br /><br />TAREA: Incluir ese 20% o menos de alimentos procesados o ultraprocesados en las situaciones que lo ameriten.</p>
+                        <br />
+                        <a href="https://www.instagram.com/p/Ctz6LnkJcPh/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
@@ -100,6 +102,8 @@ const Nivel_4 = ({sectionNivel}) => {
                         <h5>ACTIVIDAD Y EJERCICIO FÍSICO</h5>
                         <br />
                         <p>Saber diferenciar la actividad física del ejercicio físico es el primer paso para sistematizar el movimiento.<br /><br />TAREA: Hacer un listado de tareas de movimiento, en el cuál colocaremos cuántos entrenamientos realizaremos a la semana. Por ejemplo: ir al gimnasio 3 veces veces por semana, ir a caminar 1 vez veces por semana y nadar 2 veces por semana.</p>
+                        <br />
+                        <a href="https://www.instagram.com/p/Cj62mUzuz4C/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
@@ -112,6 +116,8 @@ const Nivel_4 = ({sectionNivel}) => {
                         <h5>¿QUÉ QUIERO ENTRENAR?</h5>
                         <br />
                         <p>Debemos conocer las capacidades físicas básicas para direccionar el entrenamiento dependiendo nuestros objetivos.<br /><br />TAREA: Dar dirección a nuestro entrenamiento es ser específicos a la capacidad a mejorar, por eso nos centraremos a estimular una de ellas a la vez. Vamos a proponernos un lapso de tiempo en meses para trabajarla. Por ejemplo: 2 meses (Cuando se cumpla el tiempo y nos adaptemos a él podemos sumar más capacidades).</p>
+                        <br />
+                        <a href="https://www.instagram.com/p/Cuimo_8OpDV/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
@@ -125,10 +131,12 @@ const Nivel_4 = ({sectionNivel}) => {
                         <h5>LA IMPORTANCIA DEL DESCANSO</h5>
                         <br />
                         <p>Hay que darle la importancia que se merece al descanso. Existe una relación inversamente proporcional entre la cantidad de estrés y de descanso que debemos respetar.<br /><br />TAREA: Programar los días de descanso relacionandolos con los días de entrenamiento. Por ejemplo, si un lunes tengo un día cargado de movimiento (ir al gimnasio y entrenar mi deporte) el martes podría descansar en inactividad o simplemente salir a caminar (descanso activo).</p>
+                        <br />
+                        <a href="https://www.instagram.com/p/CvGX2lOpOrA/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
-            <Link className="button_nivel b_niveles" to="/" onClick={scrollToSection(sectionNivel)}>Volver al inicio</Link>
+            <Link className="button_nivel b_niveles" to="/" onClick={() => scrollToSection(sectionNivel)}>Volver al inicio</Link>
         </div>
     )
 }

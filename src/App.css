@@ -29,7 +29,7 @@ body{
 .button_nivel{
     border: none;
     background-color: #19c3c9;
-    background-image: linear-gradient(to right, #19c3c9 0%, #6cfbf1  51%, #1d9797  100%);
+    background-image: linear-gradient(to right, #19c3c9 0%, #6cfbf1  50%, #1d9797  100%);
     background-size: 200% auto;
     cursor: pointer;
     transition: all 0.3s ease;

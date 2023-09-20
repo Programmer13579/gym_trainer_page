@@ -92,6 +92,31 @@
     text-decoration: underline;
     font-size: 2rem;
 }
+.info > a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #ff7844;
+    background: linear-gradient(45deg, #d93f87, #ff7844, #ffdd55, #ff7844, #d93f87, #ff7844, #ffdd55, #ff7844);
+    background-size: 800%;
+    color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+.info >a:hover{
+    animation: magicBtn 15s linear infinite;
+}
+@keyframes magicBtn{
+    0%{
+        background-position: 0% 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0% 0;
+    }
+}
 .b_niveles{
     padding: 10px 20px;
     font-variant: small-caps;
