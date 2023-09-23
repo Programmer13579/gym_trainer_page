@@ -11,21 +11,19 @@
     margin: 20px auto;
 }
 .nivel_principal > h3{
-    color: #fff;
+    color: var(--darkreader-text-gray);
     font-size: 2.5rem;
     font-variant: small-caps;
-    width: 97%;
-    text-align: left;
 }
 .nivelContainer{
     background-color: #1f1f1f;
     width: 97%;
-    margin: auto;
+    margin: 10px auto;
     border: solid 3px black;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
-    color: #fff;
+    color: var(--darkreader-text-gray);
 }
 .nivelContainer .datos{
     width: 95%;
@@ -89,7 +87,6 @@
     font-size: 1.5rem;
 }
 .info > h5{
-    text-decoration: underline;
     font-size: 2rem;
 }
 .info > a{
