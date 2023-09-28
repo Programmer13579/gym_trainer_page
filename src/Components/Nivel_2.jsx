@@ -10,6 +10,7 @@ import imagen7 from "../img/Nivel-1_(7).jpg"
 import imagen8 from "../img/Nivel-1_(8).jpg"
 import imagen9 from "../img/Nivel-1_(9).jpg"
 import { Link } from 'react-router-dom';
+import { FaDumbbell } from 'react-icons/fa';
 
 const Nivel_2 = ({sectionNivel}) => {
     const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
@@ -49,7 +50,7 @@ const Nivel_2 = ({sectionNivel}) => {
         <div className="nivel_principal">
             <h2>Nivel_2</h2>
             <hr />
-            <h3>Alimentación</h3>
+            <h3><FaDumbbell className='icons'/>Alimentación<FaDumbbell className='icons'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen nivelSlider">
@@ -94,7 +95,7 @@ const Nivel_2 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <h3>Movimiento</h3>
+            <h3><FaDumbbell className='icons'/>Movimiento<FaDumbbell className='icons'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
@@ -125,7 +126,7 @@ const Nivel_2 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <h3>Descanso</h3>
+            <h3><FaDumbbell className='icons'/>Descanso<FaDumbbell className='icons'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
