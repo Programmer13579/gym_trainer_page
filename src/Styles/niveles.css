@@ -1,12 +1,3 @@
-.icons{
-    font-size: 2rem;
-    color: var(--darkreader-text-gray);
-    rotate: -40deg;
-    margin: 0 10px;
-}
-.icons:nth-child(2){
-    rotate: 40deg;
-}
 .nivel_principal{
     background-color: #0c0d0e;
     padding: 15px 0;
@@ -23,6 +14,15 @@
     color: var(--darkreader-text-gray);
     font-size: 2.5rem;
     font-variant: small-caps;
+}
+.dumbbell{
+    font-size: 2rem;
+    rotate: -40deg;
+    margin: 0 10px;
+    color: #ff7844;
+}
+.dumbbell:nth-child(2){
+    rotate: 40deg;
 }
 .nivelContainer{
     background-color: #17191a;

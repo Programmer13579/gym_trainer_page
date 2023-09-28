@@ -50,7 +50,7 @@ const Nivel_4 = ({sectionNivel}) => {
         <div className="nivel_principal">
             <h2>NIVEL 4</h2>
             <hr />
-            <h3><FaDumbbell className='icons'/>Alimentación<FaDumbbell className='icons'/></h3>
+            <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen nivelSlider">
@@ -94,7 +94,7 @@ const Nivel_4 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <h3><FaDumbbell className='icons'/>Movimiento<FaDumbbell className='icons'/></h3>
+            <h3><FaDumbbell className='dumbbell'/>Movimiento<FaDumbbell className='dumbbell'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
@@ -125,7 +125,7 @@ const Nivel_4 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <h3><FaDumbbell className='icons'/>Descanso<FaDumbbell className='icons'/></h3>
+            <h3><FaDumbbell className='dumbbell'/>Descanso<FaDumbbell className='dumbbell'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
