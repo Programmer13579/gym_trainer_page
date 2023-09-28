@@ -1,5 +1,5 @@
 .nivel_principal{
-    background-color: #101010;
+    background-color: #0c0d0e;
     padding: 15px 0;
     text-align: center;
 }
@@ -16,10 +16,9 @@
     font-variant: small-caps;
 }
 .nivelContainer{
-    background-color: #1f1f1f;
+    background-color: #17191a;
     width: 97%;
     margin: 10px auto;
-    border: solid 3px black;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
