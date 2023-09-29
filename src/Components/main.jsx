@@ -3,6 +3,7 @@ import "../Styles/main.css"
 import imagen5 from '../img/imagen5.webp'
 import imagen6 from '../img/imagen6.webp'
 import imagen7 from '../img/imagen7.webp'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const main = ({sectionNivel}) => {
     const images_1 = [imagen5, imagen6, imagen7];
@@ -50,8 +51,8 @@ const main = ({sectionNivel}) => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&lt;</p></div>
-                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&gt;</p></div>
+                <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrowIcon'/></div>
+                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrowIcon'/></div>
             </div>
             <div ref={sectionNivel}></div>
         </div>

@@ -1,5 +1,5 @@
 .nivel_principal{
-    background-color: #0c0d0e;
+    background-color: var(--darkreader-background);
     padding: 15px 0;
     text-align: center;
 }

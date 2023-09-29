@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 :root{
-    --darkreader-text-gray: #dad7d2
+    --darkreader-text-gray: #dad7d2;
+    --darkreader-background: #0c0d0e;
 }
 *{
     font-family: 'Sora', sans-serif;
