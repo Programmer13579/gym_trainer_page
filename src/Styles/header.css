@@ -1,0 +1,115 @@
+.containerInfoContact{
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 99;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: .0;
+    transition: all 0.3s;
+}
+.activecontainerInfoContact{
+    visibility: visible;
+    opacity: 1;
+}
+.infoContact{
+    position: absolute;
+    inset: 20% 0 0 0;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+    width: 500px;
+    height: max-content;
+    border-radius: 20px;
+    padding: 5px 10px;
+    z-index: 100;
+    opacity: .0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activeinfoContact{
+    opacity: 1;
+}
+.infoContact h6{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 0;
+}
+.infoContact .Hicon-close{
+    position: absolute;
+    right: 10px;
+}
+.infoContact p{
+    margin: 0;
+    margin-bottom: 5px;
+    width: 95%;
+}
+.contactanos{
+    list-style: none;
+    padding: 0;
+}
+.contactos, .contactos a{
+    color: #000;
+    font-size: 18px;
+    padding: 5px 0;
+    text-decoration: none;
+}
+.contactos:nth-child(1):hover .iconContact{
+    color: #276ae6;
+}
+.contactos:nth-child(2):hover .iconContact{
+    color: #25D366;
+}
+.contactos:nth-child(3):hover .iconContact{
+    color: #039237;
+}
+.contactos:nth-child(4):hover .iconContact{
+    color: #c71a1a;
+}
+.HiconContact{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    place-content: center;
+    display: grid;
+}
+.HiconsContact .fa-facebook{
+    background-color: var(--facebook);
+}
+.HiconsContact .fa-instagram{
+    background-color: var(--instagram);
+}
+.HiconsContact .fa-twitter{
+    background-color: var(--twitter);
+}
+.Hicon-close{
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+}
+.Hicon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+@keyframes movimiento {
+    0%{transform: translateY(10px);}
+    100%{transform: translateY(-30px);
+    Color: transparent;}
+}
+@media screen and (max-width: 520px) {
+    .infoContact{
+        width: 95%;
+    }
+    .infoContact h6{
+        font-size: 19px;
+    }
+    .contactos, .contactos a{
+        font-size: 16px;
+    }
+}
+

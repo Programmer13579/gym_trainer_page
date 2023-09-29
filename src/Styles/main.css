@@ -58,24 +58,22 @@
     backdrop-filter: blur(2px);
     Color: rgba(255, 255, 255);
 }
-.arrowIcon:nth-child(1){
-    position: absolute;
+.sliderbtnLeft{
     left: 0;
 }
-.arrowIcon:nth-child(2){
-    position: absolute;
+.sliderbtnRight{
     right: 0;
 }
-.arrowIcon:nth-child(1) p{
+.sliderbtnLeft .arrowIcon{
     position: absolute;
     left: 10px;
 }
-.arrowIcon:nth-child(2) p{
+.sliderbtnRight .arrowIcon{
     position: absolute;
     right: 10px;
 }
 @media screen and (max-width: 500px) {
-    .containerBtn .arrowIcon{
+    .containerBtn p{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }

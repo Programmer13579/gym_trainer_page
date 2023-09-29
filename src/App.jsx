@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useRef } from 'react';
+import React, { Suspense, lazy, useRef, useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css"
 import Loading from './Components/Loading'
@@ -13,12 +13,13 @@ const Nivel3 = lazy(() => import('./Components/Nivel_3'));
 const Nivel4 = lazy(() => import('./Components/Nivel_4'));
 
 function App() {
+    const [contacto, setContacto] = useState(false);
     const sectionNivel = useRef(null);
     return (
         <div className="App">
             <Router>
                 <Suspense fallback={<Loading/>}>
-                    <Header/>
+                    <Header contacto = {contacto} setContacto = {setContacto}/>
                     <Main sectionNivel = {sectionNivel}/>
                     <Routes>
                         <Route path="/" element={<>
@@ -52,7 +53,7 @@ function App() {
                             </Suspense>
                         </>}/>
                     </Routes>
-                    <Footer/>
+                    <Footer contacto = {contacto} setContacto = {setContacto}/>
                 </Suspense>
             </Router>
         </div>

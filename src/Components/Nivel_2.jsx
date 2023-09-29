@@ -11,6 +11,7 @@ import imagen8 from "../img/Nivel-1_(8).jpg"
 import imagen9 from "../img/Nivel-1_(9).jpg"
 import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Nivel_2 = ({sectionNivel}) => {
     const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
@@ -66,8 +67,8 @@ const Nivel_2 = ({sectionNivel}) => {
                                     </div>
                                 )}
                             </div>
-                            <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&lt;</p></div>
-                            <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><p>&gt;</p></div>
+                            <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrowIcon'/></div>
+                            <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrowIcon'/></div>
                         </div>
                     </div>
                     <div className="info">
