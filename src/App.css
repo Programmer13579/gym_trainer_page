@@ -29,8 +29,6 @@ body{
     border-radius: 10px;
     border: none;
     font-size: 1.88rem;
-}
-.button_nivel{
     border: none;
     background-color: #19c3c9;
     background-image: linear-gradient(to right, #19c3c9 0%, #6cfbf1  50%, #1d9797  100%);

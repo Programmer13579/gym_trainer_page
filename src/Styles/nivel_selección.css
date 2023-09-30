@@ -1,5 +1,5 @@
 .nivel_seleccion{
-    background-color: #181818;
+    background-color: var(--darkreader-background);
     padding: 20px 0;
 }
 .nivel_seleccion h2{

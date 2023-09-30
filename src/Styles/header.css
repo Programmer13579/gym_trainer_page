@@ -1,3 +1,53 @@
+.navLink{
+    color:#fff;
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    &.active {
+        color:#15cdfc;
+    }
+}
+.nav{
+    background: #000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw- 1000px) /2);
+    z-index: 10;
+}
+.bars{
+    display:none;
+    color:#fff;
+}
+.navMenu{
+    display:flex;
+    align-items:center;
+    margin-right: -24px;
+}
+.navBtn{
+    display:flex;
+    align-items:center;
+    margin-right:24px;
+}
+.navBtnLink{
+    border-radius: 4px;
+    padding: 10px 22px;
+    color: #fff;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    text-decoration:none;
+}
+.navBtnLink:hover {
+    background: #fff;
+    color:#010606;
+}
+
+
+
 .containerInfoContact{
     font-family: Arial, Helvetica, sans-serif;
     visibility: hidden;
@@ -33,28 +83,30 @@
     opacity: 1;
 }
 .infoContact h6{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
     padding: 5px 0;
 }
-.infoContact .Hicon-close{
+.Hicon_close{
     position: absolute;
     right: 10px;
+    width: 25px;
+    height: 25px;
 }
-.infoContact p{
-    margin: 0;
-    margin-bottom: 5px;
-    width: 95%;
+.Hicon_close:hover{
+    stroke: red;
+    cursor: pointer;
 }
 .contactanos{
     list-style: none;
-    padding: 0;
 }
-.contactos, .contactos a{
-    color: #000;
-    font-size: 18px;
+.contactos{
+    font-size: 1.12rem;
     padding: 5px 0;
+}
+.contactos a{
+    color: #000;
     text-decoration: none;
 }
 .contactos:nth-child(1):hover .iconContact{
@@ -69,47 +121,31 @@
 .contactos:nth-child(4):hover .iconContact{
     color: #c71a1a;
 }
-.HiconContact{
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    color: #fff;
-    place-content: center;
-    display: grid;
-}
-.HiconsContact .fa-facebook{
-    background-color: var(--facebook);
-}
-.HiconsContact .fa-instagram{
-    background-color: var(--instagram);
-}
-.HiconsContact .fa-twitter{
-    background-color: var(--twitter);
-}
-.Hicon-close{
-    width: 25px;
-    height: 25px;
-    margin: auto 0;
-}
-.Hicon-close:hover{
-    stroke: red;
-    cursor: pointer;
-}
 @keyframes movimiento {
     0%{transform: translateY(10px);}
     100%{transform: translateY(-30px);
     Color: transparent;}
 }
+
+
+@media screen and (max-width: 768px) {
+    .bars{
+        display:block;
+        position:absolute;
+        top:0;
+        right:0;
+        transform: translate(-100%,75%);
+        font-size:1.8rem;
+        cursor:pointer;
+    }
+    .navMenu, .navBtn{
+        display:none;
+    }
+}
+
+
 @media screen and (max-width: 520px) {
     .infoContact{
         width: 95%;
     }
-    .infoContact h6{
-        font-size: 19px;
-    }
-    .contactos, .contactos a{
-        font-size: 16px;
-    }
 }
-

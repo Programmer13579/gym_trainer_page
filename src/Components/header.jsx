@@ -1,36 +1,37 @@
 import React from 'react'
-import { Nav,NavLink,Bars,NavMenu,NavBtn,NavBtnLink } from '../Styles/header.js'
+import { NavLink } from 'react-router-dom';
 import '../Styles/header.css'
 import {FaLocationDot} from 'react-icons/fa6'
 import {IoLogoWhatsapp} from 'react-icons/io'
 import {BsFillTelephoneFill, BsInstagram} from 'react-icons/bs'
+import {FaBars} from 'react-icons/fa'
 
 const header= ({contacto, setContacto}) => {
     return (
         <>
-        <Nav>
-            <NavLink to="/">
+        <nav className='nav'>
+            <NavLink className={'navLink'} to="/">
                 <h1>Logo</h1>
             </NavLink>
-            <Bars/>
-            <NavMenu>
-                <NavLink to="/about" activeStyle>
+            <FaBars className='bars'/>
+            <div className='navMenu'>
+                <NavLink className={'navLink'} to="/about" activeStyle>
                     About                   
                 </NavLink>
-                <NavLink to="/services" activeStyle>
+                <NavLink className={'navLink'} to="/services" activeStyle>
                     Services                 
                 </NavLink>
-                <NavLink to="/contact" activeStyle onClick={() => setContacto(true)}>
+                <NavLink className={'navLink'} to="/contact" activeStyle onClick={() => setContacto(true)}>
                     Contact                   
                 </NavLink>
-                <NavLink to="/sign-up" activeStyle>
+                <NavLink className={'navLink'} to="/sign-up" activeStyle>
                     Sign up                
                 </NavLink>
-            </NavMenu>
-            <NavBtn>
-                <NavBtnLink to="/signin">Sign in</NavBtnLink>
-            </NavBtn>
-        </Nav>
+            </div>
+            <nav className='navBtn'>
+                <NavLink className={'navBtnLink'} to="/signin">Sign in</NavLink>
+            </nav>
+        </nav>
         
         {/* Formulario de contacto */}
         {/* Se comprueba si contacto es true. En caso de cumplirse la condicion se asigna la clase para mostrar el formulario de contacto. */}
@@ -42,7 +43,7 @@ const header= ({contacto, setContacto}) => {
 		        	viewBox="0 0 24 24"
 		        	strokeWidth="1.5"
 		        	stroke="currentColor"
-		        	className="Hicon-close"
+		        	className="Hicon_close"
                     onClick={() => setContacto(false)}>
 		        	<path
 		        		strokeLinecap="round"
