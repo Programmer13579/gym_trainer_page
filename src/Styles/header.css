@@ -109,17 +109,19 @@
     color: #000;
     text-decoration: none;
 }
-.contactos:nth-child(1):hover .iconContact{
-    color: #276ae6;
-}
-.contactos:nth-child(2):hover .iconContact{
-    color: #25D366;
-}
-.contactos:nth-child(3):hover .iconContact{
-    color: #039237;
-}
-.contactos:nth-child(4):hover .iconContact{
-    color: #c71a1a;
+.contactos{
+    &:nth-child(1):hover .iconContact{
+        color: #276ae6;
+    }
+    &:nth-child(2):hover .iconContact{
+        color: #25D366;
+    }
+    &:nth-child(3):hover .iconContact{
+        color: #039237;
+    }
+    &:nth-child(4):hover .iconContact{
+        color: #c71a1a;
+    }
 }
 @keyframes movimiento {
     0%{transform: translateY(10px);}
