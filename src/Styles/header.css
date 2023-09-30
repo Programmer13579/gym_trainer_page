@@ -109,9 +109,6 @@
     color: #000;
     text-decoration: none;
 }
-.contactos{
-    
-}
 .contactos:nth-child(1):hover .iconContact{
     color: #276ae6;
 }
