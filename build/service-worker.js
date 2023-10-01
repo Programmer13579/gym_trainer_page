@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gym_trainer_page/precache-manifest.0699fcb54a36ea9d41191c9474303edb.js"
+  "/gym_trainer_page/precache-manifest.ed799e716de0fecb2a1815752bbf6d57.js"
 );
 
 workbox.clientsClaim();
