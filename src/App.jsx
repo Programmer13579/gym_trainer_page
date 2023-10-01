@@ -20,11 +20,11 @@ function App() {
             <Router>
                 <Suspense fallback={<Loading/>}>
                     <Header contacto = {contacto} setContacto = {setContacto}/>
-                    <Main sectionNivel = {sectionNivel}/>
+                    <Main/>
                     <Routes>
                         <Route path="/" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <NivelSeleccion sectionNivel = {sectionNivel}/>
+                                <NivelSeleccion/>
                             </Suspense>
                         </>}/>
                         <Route path="nivel_1" element={<>
@@ -49,11 +49,11 @@ function App() {
                         </>}/>
                         <Route path="*" element={<>
                             <Suspense fallback={<Loading/>}>
-                                <Error404 sectionNivel = {sectionNivel}/>
+                                <Error404/>
                             </Suspense>
                         </>}/>
                     </Routes>
-                    <Footer contacto = {contacto} setContacto = {setContacto}/>
+                    <Footer/>
                 </Suspense>
             </Router>
         </div>

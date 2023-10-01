@@ -5,7 +5,7 @@ import imagen6 from '../img/imagen6.webp'
 import imagen7 from '../img/imagen7.webp'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-const main = ({sectionNivel}) => {
+const main = () => {
     const images_1 = [imagen5, imagen6, imagen7];
     const [animation_1, setAnimation_1] = useState(0);
     const [timeInterval_1, setTimeInterval_1] = useState(15000);
@@ -26,7 +26,6 @@ const main = ({sectionNivel}) => {
             p_setAnimation(p_images.length - 1)
     }
 
-
     useEffect(() => {
         const interval = setInterval(() => {
             nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
@@ -35,7 +34,7 @@ const main = ({sectionNivel}) => {
     });
 
     return (
-        <div className='main'>
+        <main>
             <div className="containerSliderPrincipal">
                 <div className="sliderPrincipal" id='sliderPrincipal'>
                     {images_1.length ? images_1.map((image, index) => (
@@ -54,8 +53,7 @@ const main = ({sectionNivel}) => {
                 <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrowIcon'/></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrowIcon'/></div>
             </div>
-            <div ref={sectionNivel}></div>
-        </div>
+        </main>
     )
 }
 

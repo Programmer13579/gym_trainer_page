@@ -5,13 +5,14 @@ import {FaLocationDot} from 'react-icons/fa6'
 import {IoLogoWhatsapp} from 'react-icons/io'
 import {BsFillTelephoneFill, BsInstagram} from 'react-icons/bs'
 import {FaBars} from 'react-icons/fa'
+import logo from '../img/SDN_logo_small.jpg'
 
 const header= ({contacto, setContacto}) => {
     return (
         <>
         <nav className='nav'>
             <NavLink className={'navLink'} to="/">
-                <h1>Logo</h1>
+                <img src={logo} alt="logo" className='logoSmall'/>
             </NavLink>
             <FaBars className='bars'/>
             <div className='navMenu'>
@@ -51,7 +52,10 @@ const header= ({contacto, setContacto}) => {
 		        		d="M6 18L18 6M6 6l12 12"
 		        	/>
 		        </svg>
-                <h6>"SDN GYM" - Contactos</h6>
+                <div className="titleContact">
+                    <img src={logo} alt="logo" className='logoSmallContact'/>
+                    <h6>"SDN GYM" - Contactos</h6>
+                </div>
                 <ul className='contactanos'>
                     {/* Redirigimos a la ubicacion de la empresa en google maps */}
                     <li className='contactos'><a className='iconContact' href="https://www.google.com.gt/maps/place/La+Oferta/@-27.3477648,-65.5910017,18z/data=!4m10!1m2!2m1!1sla+oferta!3m6!1s0x9423cf5c99bfe997:0x1e14071c27ac474d!8m2!3d-27.3466769!4d-65.5894634!15sCglsYSBvZmVydGFaCyIJbGEgb2ZlcnRhkgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F11b7xmqvg8?entry=ttu" target='_blank' rel="noopener noreferrer"><FaLocationDot/>Buenos Aires 60, Concepción, Tucumán, Argentina.</a></li>

@@ -18,6 +18,11 @@
     padding: 0.5rem calc((100vw- 1000px) /2);
     z-index: 10;
 }
+.logoSmall{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 .bars{
     display:none;
     color:#fff;
@@ -69,7 +74,7 @@
     inset: 20% 0 0 0;
     margin: 0 auto;
     background-color: rgb(245, 245, 245);
-    width: 500px;
+    width: 530px;
     height: max-content;
     border-radius: 20px;
     padding: 5px 10px;
@@ -82,11 +87,22 @@
 .activeinfoContact{
     opacity: 1;
 }
-.infoContact h6{
+.titleContact{
+    display: flex;
+    padding: 5px 0 15px 0;
+}
+.logoSmallContact{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.titleContact h6{
+    display: flex;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
-    padding: 5px 0;
+    margin: auto;
+    padding-right: 30px;
 }
 .Hicon_close{
     position: absolute;
@@ -102,7 +118,7 @@
     list-style: none;
 }
 .contactos{
-    font-size: 1.12rem;
+    font-size: 1.2rem;
     padding: 5px 0;
 }
 .contactos a{

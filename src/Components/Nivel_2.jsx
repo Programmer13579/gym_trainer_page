@@ -34,6 +34,12 @@ const Nivel_2 = ({sectionNivel}) => {
             p_setAnimation(p_images.length - 1)
     }
 
+    function scrollToSection(ref){
+        if (ref.current) {
+          ref.current.scrollIntoView();
+        }
+    };
+
     useEffect(() => {
         const interval = setInterval(() => {
             nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
@@ -41,14 +47,12 @@ const Nivel_2 = ({sectionNivel}) => {
         return() => clearInterval(interval);
     });
 
-    const scrollToSection = (ref) => {
-        if (ref.current) {
-          ref.current.scrollIntoView();
-        }
-    };
+    useEffect(() => {
+        scrollToSection(sectionNivel)
+    },[]);
     
     return (
-        <div className="nivel_principal">
+        <div className="nivel_principal" ref={sectionNivel}>
             <h2>Nivel_2</h2>
             <hr />
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
@@ -143,7 +147,7 @@ const Nivel_2 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <Link className="button_nivel b_niveles" to="/nivel_3" onClick={() => scrollToSection(sectionNivel)}>Siguiente nivel</Link>
+            <Link className="button_nivel b_niveles" to="/nivel_3">Siguiente nivel</Link>
         </div>
     )
 }
