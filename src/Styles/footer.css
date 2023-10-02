@@ -17,15 +17,14 @@
   
 .footer .about { 
     line-height: 20px;
-    color: #ffffff;
+    color: var(--darkreader-text-gray);
     font-size: 13px;
     font-weight: normal;
     margin: 0;
 }
   
 .footer h3 {
-    color: #ffffff;
-    font-size: 50px;
+    color: var(--darkreader-text-gray);
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -45,7 +44,7 @@
     background-color: #33383b;
     border-radius: 10px;
     font-size: 20px;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     line-height: 35px;
     margin-right: 10px;
@@ -59,7 +58,7 @@
 }
 
 .footer .footer-center p {
-    color: #ffffff;
+    color: var(--darkreader-text-gray);
     font-size: 1.4rem;
     margin-bottom: 5px;
 }
@@ -73,8 +72,7 @@
 /* footer right*/
   
 .footer h2 {
-    color: #ffffff;
-    font-size: 36px;
+    color: var(--darkreader-text-gray);
     font-weight: normal;
     margin: 0;
 }
@@ -85,7 +83,7 @@
 }
   
 .footer .menu {
-    color: #ffffff;
+    color: var(--darkreader-text-gray);
     margin: 20px 0 12px;
     padding: 0;
 }

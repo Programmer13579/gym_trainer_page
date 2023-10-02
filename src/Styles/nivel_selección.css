@@ -5,40 +5,25 @@
     align-items: center;
 }
 .button_seleccion{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 11rem);
     max-width: 700px;
     padding: 20px 0;
 }
-.iconSelector{
-    width: 75px;
-    font-size: 5rem;
-    color: #ff7844;
+.divIconSelector{
     animation: exercise 4s linear infinite;
+}
+.iconSelector{
+    width: 5.5rem;
+    height: 5.5rem;
+    color: #ff7844;
+}
+.divIconSelector:nth-child(1), .divIconSelector:nth-child(4){
     animation-delay: 2s;
+}
+.divIconSelectorLeft:nth-child(1) .iconSelector, .divIconSelector:nth-child(4) .iconSelector{
     rotate: 90deg;
 }
-.iconSelectorB{
-    animation: exerciseB 4s linear infinite;
-    rotate: 0deg;
-}
 @keyframes exercise {
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(-150px);
-    }
-    50%{
-        transform: translateX(0);
-    }
-    75%{
-        transform: translateX(20px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes exerciseB {
     0%{
         transform: translateY(0);
     }
@@ -60,6 +45,7 @@
     color: rgb(10, 200, 238);
     text-align: center;
     font-variant: small-caps;
+    margin-top: 20px;
 }
 .button_seleccion{
     min-height: 400px;
@@ -73,14 +59,27 @@
     font-variant: small-caps;
     line-height: 60px;
 }
+@media screen and (max-width: 1100px) {
+    .divIconSelector:nth-child(2), .divIconSelector:nth-child(4){
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+}
 @media screen and (max-width: 660px) {
+    .iconSelector{
+        width: 75px;
+        height: 75px;
+    }
     .button_seleccion{
         grid-template-columns: 1fr;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
     .iconSelector{
-        display: none;
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
     .button_seleccion{
         width: 100%;
