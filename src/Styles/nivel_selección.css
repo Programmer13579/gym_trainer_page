@@ -1,6 +1,59 @@
 .nivel_seleccion{
     background-color: var(--darkreader-background);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button_seleccion{
+    width: calc(100vw - 150px);
+    max-width: 700px;
     padding: 20px 0;
+}
+.iconSelector{
+    width: 75px;
+    font-size: 5rem;
+    color: #ff7844;
+    animation: exercise 4s linear infinite;
+    animation-delay: 2s;
+    rotate: 90deg;
+}
+.iconSelectorB{
+    animation: exerciseB 4s linear infinite;
+    rotate: 0deg;
+}
+@keyframes exercise {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-150px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes exerciseB {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-150px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .nivel_seleccion h2{
     font-size: 2.85rem;
@@ -20,8 +73,16 @@
     font-variant: small-caps;
     line-height: 60px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 660px) {
     .button_seleccion{
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 350px) {
+    .iconSelector{
+        display: none;
+    }
+    .button_seleccion{
+        width: 100%;
     }
 }

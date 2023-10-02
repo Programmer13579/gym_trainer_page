@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "../Styles/niveles.css"
+import { prevImage, nextImage, scrollToSection } from './main'
 import imagen1 from "../img/Nivel-1_(1).jpg"
 import imagen2 from "../img/Nivel-1_(2).jpg"
 import imagen3 from "../img/Nivel-1_(3).jpg"
@@ -17,28 +18,6 @@ const Nivel_1 = ({sectionNivel}) => {
     const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
     const [animation_1, setAnimation_1] = useState(0);
     const [timeInterval_1, setTimeInterval_1] = useState(10000);
-    
-    function nextImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
-        p_setInterval(p_time)
-        if(p_animation !== p_images.length - 1)
-            p_setAnimation(p_animation + 1)
-        else
-            p_setAnimation(0)
-    }
-
-    function prevImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
-        p_setInterval(p_time)
-        if(p_animation !== 0)
-            p_setAnimation(p_animation - 1)
-        else
-            p_setAnimation(p_images.length - 1)
-    }
-
-    function scrollToSection(ref){
-        if (ref.current) {
-          ref.current.scrollIntoView();
-        }
-    };
 
     useEffect(() => {
         const interval = setInterval(() => {

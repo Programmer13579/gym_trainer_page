@@ -5,26 +5,32 @@ import imagen6 from '../img/imagen6.webp'
 import imagen7 from '../img/imagen7.webp'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
+export const nextImage = (p_time, p_setInterval, p_animation, p_setAnimation, p_images) => {
+    p_setInterval(p_time)
+    if(p_animation !== p_images.length - 1)
+        p_setAnimation(p_animation + 1)
+    else
+        p_setAnimation(0)
+}
+
+export const prevImage = (p_time, p_setInterval, p_animation, p_setAnimation, p_images) => {
+    p_setInterval(p_time)
+    if(p_animation !== 0)
+        p_setAnimation(p_animation - 1)
+    else
+        p_setAnimation(p_images.length - 1)
+}
+
+export const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView();
+    }
+};
+
 const main = () => {
     const images_1 = [imagen5, imagen6, imagen7];
     const [animation_1, setAnimation_1] = useState(0);
     const [timeInterval_1, setTimeInterval_1] = useState(15000);
-    
-    function nextImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
-        p_setInterval(p_time)
-        if(p_animation !== p_images.length - 1)
-            p_setAnimation(p_animation + 1)
-        else
-            p_setAnimation(0)
-    }
-    
-    function prevImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
-        p_setInterval(p_time)
-        if(p_animation !== 0)
-            p_setAnimation(p_animation - 1)
-        else
-            p_setAnimation(p_images.length - 1)
-    }
 
     useEffect(() => {
         const interval = setInterval(() => {

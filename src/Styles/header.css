@@ -15,7 +15,6 @@
     height: 80px;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw- 1000px) /2);
     z-index: 10;
 }
 .logoSmall{
@@ -24,8 +23,8 @@
     border-radius: 50%;
 }
 .bars{
-    display:none;
-    color:#fff;
+    display: none;
+    color: #fff;
 }
 .navMenu{
     display:flex;
@@ -125,16 +124,19 @@
     color: #000;
     text-decoration: none;
 }
-.contactos:nth-child(1):hover .iconContact{
+.iconContact{
+    margin-right: 5px;
+}
+.contactos:nth-child(1):hover a{
     color: #276ae6;
 }
-.contactos:nth-child(2):hover .iconContact{
+.contactos:nth-child(2):hover a{
     color: #25D366;
 }
-.contactos:nth-child(3):hover .iconContact{
+.contactos:nth-child(3):hover a{
     color: #039237;
 }
-.contactos:nth-child(4):hover .iconContact{
+.contactos:nth-child(4):hover a{
     color: #c71a1a;
 }
 @keyframes movimiento {

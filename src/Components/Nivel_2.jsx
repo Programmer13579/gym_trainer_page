@@ -1,51 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import "../Styles/niveles.css"
-import imagen1 from "../img/Nivel-1_(1).jpg"
-import imagen2 from "../img/Nivel-1_(2).jpg"
-import imagen3 from "../img/Nivel-1_(3).jpg"
-import imagen4 from "../img/Nivel-1_(4).jpg"
-import imagen5 from "../img/Nivel-1_(5).jpg"
-import imagen6 from "../img/Nivel-1_(6).jpg"
-import imagen7 from "../img/Nivel-1_(7).jpg"
-import imagen8 from "../img/Nivel-1_(8).jpg"
-import imagen9 from "../img/Nivel-1_(9).jpg"
+import { scrollToSection } from './main'
+import imagen1 from "../img/Nivel-2_(1).png"
+import imagen2 from "../img/Nivel-2_(2).png"
 import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Nivel_2 = ({sectionNivel}) => {
-    const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
-    const [animation_1, setAnimation_1] = useState(0);
-    const [timeInterval_1, setTimeInterval_1] = useState(10000);
-    
-    function nextImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
-        p_setInterval(p_time)
-        if(p_animation !== p_images.length - 1)
-            p_setAnimation(p_animation + 1)
-        else
-            p_setAnimation(0)
-    }
-    
-    function prevImage(p_time, p_setInterval, p_animation, p_setAnimation, p_images){
-        p_setInterval(p_time)
-        if(p_animation !== 0)
-            p_setAnimation(p_animation - 1)
-        else
-            p_setAnimation(p_images.length - 1)
-    }
-
-    function scrollToSection(ref){
-        if (ref.current) {
-          ref.current.scrollIntoView();
-        }
-    };
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
-        }, timeInterval_1);
-        return() => clearInterval(interval);
-    });
 
     useEffect(() => {
         scrollToSection(sectionNivel)
@@ -59,7 +20,7 @@ const Nivel_2 = ({sectionNivel}) => {
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen2} alt="" />
+                        <img src={imagen1} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
@@ -75,7 +36,7 @@ const Nivel_2 = ({sectionNivel}) => {
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen3} alt="" />
+                        <img src={imagen2} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
