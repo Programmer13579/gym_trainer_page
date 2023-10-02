@@ -58,43 +58,14 @@ const Nivel_2 = ({sectionNivel}) => {
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
-                    <div className="imagen nivelSlider">
-                        <div className="containerSliderPrincipal">
-                            <div className="sliderPrincipal" id='sliderPrincipal'>
-                                {images_1.length ? images_1.map((image, index) => (
-                                    <div className={`sliderSection ${animation_1 === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
-                                        <img src={image} alt="" className={'imgSliderPrincipal'} />
-                                    </div>
-                                )): (
-                                    <div className="sliderNotFound">
-                                        <h5>Error al cargar las imagenes</h5>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrowIcon'/></div>
-                            <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrowIcon'/></div>
-                        </div>
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>CLASIFICACIÓN DE LOS ALIMENTOS</h5>
-                        <br /><hr /><br />
-                        <p>El primer paso y el más significativo a la hora de mejorar nuestra alimentación es saber clasificar los alimentos.<br /><br />TAREA: Tu alimentación tendría que basarse en un 80% o más de alimentos reales o mínimamente procesados, mientras que el 20% o menos, del total de alimentos consumidos a diario, pueden ser procesasos. A los ultaprocesados intentaremos eliminarlos por completo.</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/CrM0-NXuTN5/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div className='nivelContainer'>
-                <div className="datos">
                     <div className="imagen">
                         <img src={imagen2} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>NO POLARIZAR</h5>
+                        <h5>titulo</h5>
                         <br /><hr /><br />
-                        <p>En lo que respecta a la alimentación y entrenamiento no debemos pensar en blanco o negro, sino en grises, porque los buenos caminos no se encuentran en los extremos.<br /><br />TAREA: Incluir ese 20% o menos de alimentos procesados o ultraprocesados en las situaciones que lo ameriten.</p>
+                        <p>CALORÍA (cal) Es una unidad de energía; cantidad de calor necesario para elevar la temperatura de 1 gramo de agua en 1°C, (de 14,5 ºC a 15,5 ºC). También se la llamada "caloría-gramo" o "caloría pequeña". Una variante empleada en nutrición es sustituir la cantidad de agua referida por 1 kg. A esta variante basada en kilogramo se la llama "kilocaloría (kcal)" o "caloría grande". Caloría (Cal; con «C» mayúscula). Por lo tanto, 1 kilocaloría (kcal) = 1000 calorías (cal). . En nuestro día a día necesitamos un aporte continuo de ENERGÍA para: • llevar a cabo todas nuestras funciones vitales; cardíaca, nerviosa, digestiva, respiratoria, reproductiva, etc. • realizar trabajo muscular, desarrollando; actividad y ejercicio físico. • producir procesos biosintéticos relacionados con el crecimiento y reparación de tejidos. • mantener la temperatura corporal. Etc. La energía que necesitamos para poder llevar a cabo todo esto es suministrada por los alimentos que consumimos.</p>
                         <br />
                         <a href="https://www.instagram.com/p/Ctz6LnkJcPh/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
@@ -108,42 +79,11 @@ const Nivel_2 = ({sectionNivel}) => {
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>ACTIVIDAD Y EJERCICIO FÍSICO</h5>
+                        <h5>titulo</h5>
                         <br /><hr /><br />
-                        <p>Saber diferenciar la actividad física del ejercicio físico es el primer paso para sistematizar el movimiento.<br /><br />TAREA: Hacer un listado de tareas de movimiento, en el cuál colocaremos cuántos entrenamientos realizaremos a la semana. Por ejemplo: ir al gimnasio 3 veces veces por semana, ir a caminar 1 vez veces por semana y nadar 2 veces por semana.</p>
+                        <p>NEAT Por sus siglas en inglés de (Non-Exercise Activity Thermogenesis), es el gasto calórico no proveniente de hacer ejercicio, sino de la ACTIVIDAD FÍSICA realizada a diario. Es todo esfuerzo, más allá del gimnasio o el deporte que practiquemos, que requiera energía para llevarlo a cabo. Por ejemplo: _ Subir por las escaleras en vez de usar el ascensor. _ Bajar paradas antes al tomar un colectivo y caminar o, no tomar el colectivo e ir caminando o en bici a nuestro destino. _ Limpiar la casa más a menudo. _ Jugar con nuestro perro. _ Bailar con los niños de casa. _ Salir hacer las compras. _ Estar menos tiempo sentado. Todos ellos son pequeños cambios que pueden marcar la diferencia a la hora de perder peso, ya que nos ayudarán a mantener ese déficit calórico necesario para lograrlo.</p>
                         <br />
                         <a href="https://www.instagram.com/p/Cj62mUzuz4C/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div className='nivelContainer'>
-                <div className="datos">
-                    <div className="imagen">
-                        <img src={imagen4} alt="" />
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>¿QUÉ QUIERO ENTRENAR?</h5>
-                        <br /><hr /><br />
-                        <p>Debemos conocer las capacidades físicas básicas para direccionar el entrenamiento dependiendo nuestros objetivos.<br /><br />TAREA: Dar dirección a nuestro entrenamiento es ser específicos a la capacidad a mejorar, por eso nos centraremos a estimular una de ellas a la vez. Vamos a proponernos un lapso de tiempo en meses para trabajarla. Por ejemplo: 2 meses (Cuando se cumpla el tiempo y nos adaptemos a él podemos sumar más capacidades).</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/Cuimo_8OpDV/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <h3><FaDumbbell className='dumbbell'/>Descanso<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
-                <div className="datos">
-                    <div className="imagen">
-                        <img src={imagen5} alt="" />
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>LA IMPORTANCIA DEL DESCANSO</h5>
-                        <br /><hr /><br />
-                        <p>Hay que darle la importancia que se merece al descanso. Existe una relación inversamente proporcional entre la cantidad de estrés y de descanso que debemos respetar.<br /><br />TAREA: Programar los días de descanso relacionandolos con los días de entrenamiento. Por ejemplo, si un lunes tengo un día cargado de movimiento (ir al gimnasio y entrenar mi deporte) el martes podría descansar en inactividad o simplemente salir a caminar (descanso activo).</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/CvGX2lOpOrA/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>

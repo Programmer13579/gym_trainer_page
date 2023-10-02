@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import "../Styles/niveles.css"
-import imagen1 from "../img/Nivel-1_(1).jpg"
-import imagen2 from "../img/Nivel-1_(2).jpg"
-import imagen3 from "../img/Nivel-1_(3).jpg"
-import imagen4 from "../img/Nivel-1_(4).jpg"
-import imagen5 from "../img/Nivel-1_(5).jpg"
-import imagen6 from "../img/Nivel-1_(6).jpg"
-import imagen7 from "../img/Nivel-1_(7).jpg"
-import imagen8 from "../img/Nivel-1_(8).jpg"
-import imagen9 from "../img/Nivel-1_(9).jpg"
+import imagen1 from "../img/Nivel-3_(1).jpg"
+import imagen2 from "../img/Nivel-3_(2).jpg"
+
 import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Nivel_3 = ({sectionNivel}) => {
-    const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
     const [animation_1, setAnimation_1] = useState(0);
     const [timeInterval_1, setTimeInterval_1] = useState(10000);
     
@@ -58,43 +51,14 @@ const Nivel_3 = ({sectionNivel}) => {
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
             <div className='nivelContainer'>
                 <div className="datos">
-                    <div className="imagen nivelSlider">
-                        <div className="containerSliderPrincipal">
-                            <div className="sliderPrincipal" id='sliderPrincipal'>
-                                {images_1.length ? images_1.map((image, index) => (
-                                    <div className={`sliderSection ${animation_1 === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
-                                        <img src={image} alt="" className={'imgSliderPrincipal'} />
-                                    </div>
-                                )): (
-                                    <div className="sliderNotFound">
-                                        <h5>Error al cargar las imagenes</h5>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrowIcon'/></div>
-                            <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrowIcon'/></div>
-                        </div>
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>CLASIFICACIÓN DE LOS ALIMENTOS</h5>
-                        <br /><hr /><br />
-                        <p>El primer paso y el más significativo a la hora de mejorar nuestra alimentación es saber clasificar los alimentos.<br /><br />TAREA: Tu alimentación tendría que basarse en un 80% o más de alimentos reales o mínimamente procesados, mientras que el 20% o menos, del total de alimentos consumidos a diario, pueden ser procesasos. A los ultaprocesados intentaremos eliminarlos por completo.</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/CrM0-NXuTN5/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div className='nivelContainer'>
-                <div className="datos">
                     <div className="imagen">
-                        <img src={imagen2} alt="" />
+                        <img src={imagen1} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>NO POLARIZAR</h5>
+                        <h5>titulo</h5>
                         <br /><hr /><br />
-                        <p>En lo que respecta a la alimentación y entrenamiento no debemos pensar en blanco o negro, sino en grises, porque los buenos caminos no se encuentran en los extremos.<br /><br />TAREA: Incluir ese 20% o menos de alimentos procesados o ultraprocesados en las situaciones que lo ameriten.</p>
+                        <p>NUTRIENTES Son sustancias contenidas en alimentos. Los requeridos en grandes cantidades son llamados MACROnutrientes y los requeridos en cantidades pequeñas se les conoce como MICROnutrientes. MACRONUTRIENTES: Proporcionan energía al organismo. Además, sirven para reparar y construir estructuras, promover el crecimiento y regular procesos metabólicos. Este grupo está constituido por: • Proteínas • Grasas • Hidratos de Carbono MICRONUTRIENTES: Permiten el desarrollo de procesos metabólicos, previenen infecciones y contribuyen al crecimiento (son necesarios para el mantenimiento de la salud) y no producen energía como los macronutrientes. Aquí encontramos: • Vitaminas • Minerales</p>
                         <br />
                         <a href="https://www.instagram.com/p/Ctz6LnkJcPh/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
@@ -104,46 +68,15 @@ const Nivel_3 = ({sectionNivel}) => {
             <div className='nivelContainer'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen3} alt="" />
+                        <img src={imagen2} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>ACTIVIDAD Y EJERCICIO FÍSICO</h5>
+                        <h5>titulo</h5>
                         <br /><hr /><br />
-                        <p>Saber diferenciar la actividad física del ejercicio físico es el primer paso para sistematizar el movimiento.<br /><br />TAREA: Hacer un listado de tareas de movimiento, en el cuál colocaremos cuántos entrenamientos realizaremos a la semana. Por ejemplo: ir al gimnasio 3 veces veces por semana, ir a caminar 1 vez veces por semana y nadar 2 veces por semana.</p>
+                        <p>TIPOS DE RUTINAS DE ENTRENAMIENTO Estos son algunos ejemplos de cómo se puede organizar una rutina en el gimnasio: • Divididas por GRUPOS MUSCULARES. Se trabaja diferentes musculos en una misma sesion. Por ejm; . sesion 1 - pectorales, deltoides y tríceps / cuádriceps y pantorrillas. . sesión 2 - dorsales, trapecio y bíceps / Isquiosurales y glúteo. • Divididas por EJERCICIOS DE TORSO Y PIERNA. Se trabaja un conjunto de ejercicios para el tren superior (TS) en una sesión, y en la otra, ejercicios para el tren inferior (TI). Por ejm; . sesión 1 - Tren superior . sesión 2 - Tren inferior. • Divididas por PATRONES DE MOVIMIENTO. Se trabaja por sesión un patron de movimiento o conjunto de patrones. Por ejm; . sesión 1 - Empujes y Dominantes de rodilla . sesión 2 - Tracciones y Dominantes de cadera. • De CUERPO COMPLETO. Se trabaja en una misma sesión ejercicios para el TS y TI. Por ejm; . sesión 1, 2 y 3 - tren superior e inferior. • División MIXTA. Son combinaciones de las divisiones anteriores. por ejm; Rutina dividida por 'Ejercicios de torso y pierna' + rutina dividida por 'Patrones de movimiento' + rutina dividida por 'Grupos musculares' . sesión 1 - Tren Superior; Empujes, Tracciones, bíceps y triceps. . sesión 2 - Tren Inferior; Dominantes de rodilla, Dominantes de cadera y pantorrilas.</p>
                         <br />
                         <a href="https://www.instagram.com/p/Cj62mUzuz4C/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div className='nivelContainer'>
-                <div className="datos">
-                    <div className="imagen">
-                        <img src={imagen4} alt="" />
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>¿QUÉ QUIERO ENTRENAR?</h5>
-                        <br /><hr /><br />
-                        <p>Debemos conocer las capacidades físicas básicas para direccionar el entrenamiento dependiendo nuestros objetivos.<br /><br />TAREA: Dar dirección a nuestro entrenamiento es ser específicos a la capacidad a mejorar, por eso nos centraremos a estimular una de ellas a la vez. Vamos a proponernos un lapso de tiempo en meses para trabajarla. Por ejemplo: 2 meses (Cuando se cumpla el tiempo y nos adaptemos a él podemos sumar más capacidades).</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/Cuimo_8OpDV/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <h3><FaDumbbell className='dumbbell'/>Descanso<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
-                <div className="datos">
-                    <div className="imagen">
-                        <img src={imagen5} alt="" />
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>LA IMPORTANCIA DEL DESCANSO</h5>
-                        <br /><hr /><br />
-                        <p>Hay que darle la importancia que se merece al descanso. Existe una relación inversamente proporcional entre la cantidad de estrés y de descanso que debemos respetar.<br /><br />TAREA: Programar los días de descanso relacionandolos con los días de entrenamiento. Por ejemplo, si un lunes tengo un día cargado de movimiento (ir al gimnasio y entrenar mi deporte) el martes podría descansar en inactividad o simplemente salir a caminar (descanso activo).</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/CvGX2lOpOrA/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
