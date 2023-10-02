@@ -17,15 +17,10 @@ const footer = () => {
                 </p>
             </div>
             <div className="footer-center col-md-4 col-sm-6">
-                <div>
-                    <p>Aguilares, Tucuman</p>
-                </div>
-                <div>
-                    <p> (+54)  3865 266434</p>
-                </div>
-                <div>
-                    <p><a href="#"> manumborquez@gmail.com</a></p>
-                </div>
+                <h3>Contactame</h3>
+                <p>Aguilares, Tucuman</p>
+                <p>(+54) 3865-266434</p>
+                <p><a href="#"> manumborquez@gmail.com</a></p>
             </div>
             <div className="footer-right col-md-4 col-sm-6">
                 <center><h2> <span>  SDN GYM </span></h2></center>
