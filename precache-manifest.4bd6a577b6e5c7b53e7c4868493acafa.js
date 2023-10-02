@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/main.cfd6d078.chunk.js"
   },
   {
-    "revision": "2346d0232d393fe53292",
-    "url": "/gym_trainer_page/static/js/runtime~main.0ca71330.js"
+    "revision": "a42ab132428adc1c56dc",
+    "url": "/gym_trainer_page/static/js/runtime~main.5ec88916.js"
   },
   {
     "revision": "71c33b7a09759058fc83",
@@ -44,20 +44,20 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/7.d7434555.chunk.js"
   },
   {
-    "revision": "674628025250392eded9",
+    "revision": "f3f9188b5e1b523555d7",
     "url": "/gym_trainer_page/static/css/8.f867ddfd.chunk.css"
   },
   {
-    "revision": "674628025250392eded9",
-    "url": "/gym_trainer_page/static/js/8.e0212e75.chunk.js"
+    "revision": "f3f9188b5e1b523555d7",
+    "url": "/gym_trainer_page/static/js/8.9e2d68ad.chunk.js"
   },
   {
-    "revision": "49d5af5340c2791cafc0",
+    "revision": "2419bff9d06c81b2385c",
     "url": "/gym_trainer_page/static/css/9.f867ddfd.chunk.css"
   },
   {
-    "revision": "49d5af5340c2791cafc0",
-    "url": "/gym_trainer_page/static/js/9.12b4478d.chunk.js"
+    "revision": "2419bff9d06c81b2385c",
+    "url": "/gym_trainer_page/static/js/9.297d8712.chunk.js"
   },
   {
     "revision": "a74db2d243e24e372194",
@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/12.656c9322.chunk.js"
   },
   {
-    "revision": "c95553259d7d68070816",
-    "url": "/gym_trainer_page/static/css/13.4a8e3422.chunk.css"
+    "revision": "f1414264cf238ec4da66",
+    "url": "/gym_trainer_page/static/css/13.8bab4500.chunk.css"
   },
   {
-    "revision": "c95553259d7d68070816",
-    "url": "/gym_trainer_page/static/js/13.8e74ce02.chunk.js"
+    "revision": "f1414264cf238ec4da66",
+    "url": "/gym_trainer_page/static/js/13.e6b1674c.chunk.js"
   },
   {
     "revision": "17dc2b1aee4be18520c0",
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/media/Nivel-3_(2).e1b86f73.png"
   },
   {
-    "revision": "53235903f1f62d37b0055b68bf99ace4",
+    "revision": "f690b266ca88ea11b2670793deed1c55",
     "url": "/gym_trainer_page/index.html"
   }
 ];
