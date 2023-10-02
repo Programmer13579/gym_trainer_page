@@ -2,6 +2,50 @@
     background-color: var(--darkreader-background);
     padding: 20px 0;
 }
+.iconSelector{
+    font-size: 5rem;
+    color: #ff7844;
+    animation: exercise 4s linear infinite;
+    animation-delay: 2s;
+}
+.iconSelectorB{
+    animation: exerciseB 4s linear infinite;
+    rotate: 90deg;
+}
+@keyframes exercise {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-150px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes exerciseB {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-150px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 .nivel_seleccion h2{
     font-size: 2.85rem;
     color: rgb(10, 200, 238);

@@ -58,12 +58,12 @@ const header= ({contacto, setContacto}) => {
                 </div>
                 <ul className='contactanos'>
                     {/* Redirigimos a la ubicacion de la empresa en google maps */}
-                    <li className='contactos'><a className='iconContact' href="https://www.google.com.gt/maps/place/La+Oferta/@-27.3477648,-65.5910017,18z/data=!4m10!1m2!2m1!1sla+oferta!3m6!1s0x9423cf5c99bfe997:0x1e14071c27ac474d!8m2!3d-27.3466769!4d-65.5894634!15sCglsYSBvZmVydGFaCyIJbGEgb2ZlcnRhkgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F11b7xmqvg8?entry=ttu" target='_blank' rel="noopener noreferrer"><FaLocationDot/>Buenos Aires 60, Concepción, Tucumán, Argentina.</a></li>
+                    <li className='contactos'><a href="https://www.google.com.gt/maps/place/La+Oferta/@-27.3477648,-65.5910017,18z/data=!4m10!1m2!2m1!1sla+oferta!3m6!1s0x9423cf5c99bfe997:0x1e14071c27ac474d!8m2!3d-27.3466769!4d-65.5894634!15sCglsYSBvZmVydGFaCyIJbGEgb2ZlcnRhkgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F11b7xmqvg8?entry=ttu" target='_blank' rel="noopener noreferrer"><FaLocationDot className='iconContact'/>Buenos Aires 60, Concepción, Tucumán, Argentina.</a></li>
                     {/* Redirigimos a un chat de WhatsApp de la empresa con un mensaje predeterminado */}
-                    <li className='contactos'><a className='iconContact' href="https://api.whatsapp.com/send?phone=3865-266434&text=Hola, estoy interesado en contratar tu servicio de entrenador personal" target='_blank' rel="noopener noreferrer"><IoLogoWhatsapp/>WhatsApp</a></li>
+                    <li className='contactos'><a href="https://api.whatsapp.com/send?phone=3865-266434&text=Hola, estoy interesado en contratar tu servicio de entrenador personal" target='_blank' rel="noopener noreferrer"><IoLogoWhatsapp className='iconContact'/>WhatsApp</a></li>
                     {/* Redirigimos a la aplicación de telefono con el numero de la empresa ingresado para poder llamar o agregar el contacto */}
-                    <li className='contactos'><a className='iconContact' href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer"><BsFillTelephoneFill/> +54 9 3865-266434</a></li>
-                    <li className='contactos'><a className='iconContact' href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer"><BsInstagram/> @sdngym15</a></li>
+                    <li className='contactos'><a href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer"><BsFillTelephoneFill className='iconContact'/>+54 9 3865-266434</a></li>
+                    <li className='contactos'><a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer"><BsInstagram className='iconContact'/>@sdngym15</a></li>
                 </ul>
             </div>
         </div>
