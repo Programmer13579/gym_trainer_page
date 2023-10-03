@@ -31,27 +31,27 @@ const Nivel_1 = ({sectionNivel}) => {
     },[]);
     
     return (
-        <div className="nivel_principal" ref={sectionNivel}>
+        <div className="level_principal" ref={sectionNivel}>
             <h2>NIVEL 1</h2>
             <hr />
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
-                    <div className="imagen nivelSlider">
-                        <div className="containerSliderPrincipal">
-                            <div className="sliderPrincipal" id='sliderPrincipal'>
+                    <div className="imagen level_slider">
+                        <div className="container_slider_principal">
+                            <div className="slider_principal" id='slider_principal'>
                                 {images_1.length ? images_1.map((image, index) => (
-                                    <div className={`sliderSection ${animation_1 === index ? 'carrouselActive' : ''}`} key={'imageSlider' + index}>
-                                        <img src={image} alt="" className={'imgSliderPrincipal'} />
+                                    <div className={`slider_section ${animation_1 === index ? 'carrousel_active' : ''}`} key={'imageSlider' + index}>
+                                        <img src={image} alt="" className={'img_slider_principal'} />
                                     </div>
                                 )): (
-                                    <div className="sliderNotFound">
+                                    <div className="slider_not_found">
                                         <h5>Error al cargar las imagenes</h5>
                                     </div>
                                 )}
                             </div>
-                            <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrowIcon'/></div>
-                            <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrowIcon'/></div>
+                            <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
+                            <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
                         </div>
                     </div>
                     <div className="info">
@@ -64,7 +64,7 @@ const Nivel_1 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
                         <img src={imagen2} alt="" />
@@ -80,7 +80,7 @@ const Nivel_1 = ({sectionNivel}) => {
                 </div>
             </div>
             <h3><FaDumbbell className='dumbbell'/>Movimiento<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
                         <img src={imagen3} alt="" />
@@ -95,7 +95,7 @@ const Nivel_1 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
                         <img src={imagen4} alt="" />
@@ -111,7 +111,7 @@ const Nivel_1 = ({sectionNivel}) => {
                 </div>
             </div>
             <h3><FaDumbbell className='dumbbell'/>Descanso<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
                         <img src={imagen5} alt="" />
@@ -126,7 +126,7 @@ const Nivel_1 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <Link className="button_nivel b_niveles" to="/nivel_2">Siguiente nivel</Link>
+            <Link className="button_level btn_next_level" to="/nivel_2">Siguiente nivel</Link>
         </div>
     )
 }

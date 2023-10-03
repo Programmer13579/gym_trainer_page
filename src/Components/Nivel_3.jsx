@@ -13,11 +13,11 @@ const Nivel_3 = ({sectionNivel}) => {
     },[]);
 
     return (
-        <div className="nivel_principal" ref={sectionNivel}>
+        <div className="level_principal" ref={sectionNivel}>
             <h2>NIVEL 3</h2>
             <hr />
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
                         <img src={imagen1} alt="" />
@@ -33,7 +33,7 @@ const Nivel_3 = ({sectionNivel}) => {
                 </div>
             </div>
             <h3><FaDumbbell className='dumbbell'/>Movimiento<FaDumbbell className='dumbbell'/></h3>
-            <div className='nivelContainer'>
+            <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
                         <img src={imagen2} alt="" />
@@ -48,7 +48,7 @@ const Nivel_3 = ({sectionNivel}) => {
                     </div>
                 </div>
             </div>
-            <Link className="button_nivel b_niveles" to="/nivel_4">Siguiente nivel</Link>
+            <Link className="button_level btn_next_level" to="/nivel_4">Siguiente nivel</Link>
         </div>
     )
 }

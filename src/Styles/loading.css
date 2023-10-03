@@ -1,11 +1,8 @@
-:root{
-  --fondo: #000;
-}
-.Lcontainer{
+.loading-container{
   flex-grow: 1;
   min-height: 80vh;
   width: 100%;
-  background-color: var(--fondo);
+  background-color: var(--fondo-loading);
   place-content: center;
   display: grid;
   overflow: hidden;
@@ -35,7 +32,7 @@
   content: '';
 }
 .loader:after {
-  background-color: var(--fondo);
+  background-color: var(--fondo-loading);
   width: 75%;
   height: 75%;
   border-radius: 50%;
