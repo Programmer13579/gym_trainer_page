@@ -41,6 +41,7 @@
     display: grid;
     height: 100%;
     width: 30%;
+    z-index: 2;
 }
 .container_btn .arrow_icon{
     Color: rgba(255, 255, 255, 0.7);
@@ -69,27 +70,33 @@
     right: 10px;
 }
 .container_info_trainer{
+    z-index: 1;
     position: absolute;
     top: 0;
-    right: 20%;
+    
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, .2);
+    justify-content: right;
+    background-color: rgba(0, 0, 0, .1);
 }
 .info_trainer{
     color: #fff;
+    margin-right: 20%;
 }
 .info_trainer p{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 .info_trainer h3{
     color: #fff;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-bottom: 20px;
 }
 .info_trainer h3 span{
     color: #f36100;
@@ -103,7 +110,46 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: .9rem;
+}
+.slider_text_animation{
+    transform: translateY(100px);
+    opacity: 0;
+    animation: sliderAnimate .2s linear forwards;
+
+    /* INICIAR LA ANIMACIÓN AL CAMBIAR DE IMAGEN EL SLIDER */
+
+    -webkit-transition: all 0.4s ease 0.4s;
+    transition: all 0.4s ease 0.4s;
+}
+.slider_text_animation:nth-child(1){
+    animation-delay: .2s;
+}
+.slider_text_animation:nth-child(2){
+    animation-delay: .4s;
+}
+.slider_text_animation:nth-child(3){
+    animation-delay: .6s;
+}
+@keyframes sliderAnimate {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes sliderAnimate2 {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .slider_not_found > h5{
     font-size: 1.5rem;

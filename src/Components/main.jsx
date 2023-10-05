@@ -12,6 +12,9 @@ export const nextImage = (p_time, p_setInterval, p_animation, p_setAnimation, p_
         p_setAnimation(p_animation + 1)
     else
         p_setAnimation(0)
+    document.getElementById('slider_text').style.animation = "sliderAnimate .2s linear forwards";
+    document.getElementById('slider_text_2').style.animation = "sliderAnimate .2s linear forwards";
+    document.getElementById('slider_text_3').style.animation = "sliderAnimate .2s linear forwards";
 }
 
 export const prevImage = (p_time, p_setInterval, p_animation, p_setAnimation, p_images) => {
@@ -20,6 +23,9 @@ export const prevImage = (p_time, p_setInterval, p_animation, p_setAnimation, p_
         p_setAnimation(p_animation - 1)
     else
         p_setAnimation(p_images.length - 1)
+    document.getElementById('slider_text').style.animation = "sliderAnimate2 .2s linear forwards";
+    document.getElementById('slider_text_2').style.animation = "sliderAnimate2 .2s linear forwards";
+    document.getElementById('slider_text_3').style.animation = "sliderAnimate2 .2s linear forwards";
 }
 
 export const scrollToSection = (ref) => {
@@ -62,9 +68,9 @@ const main = ({setContacto}) => {
                 
                 <div className="container_info_trainer">
                     <div className="info_trainer">
-                        <p>Entrenador personal</p>
-                        <h3>SDN <span>GYM</span></h3>
-                        <button onClick={() => setContacto(true)}>Contactame</button>
+                        <p className='slider_text_animation' id='slider_text'>Entrenador personal</p>
+                        <h3 className='slider_text_animation' id='slider_text_2'>SDN <span>GYM</span></h3>
+                        <button className='slider_text_animation' id='slider_text_3' onClick={() => setContacto(true)}>Contactame</button>
                     </div>
                 </div>
             </div>
