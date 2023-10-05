@@ -1,7 +1,3 @@
-.slider{
-    height: 100vh;
-    width: 100%;
-}
 .container_slider_principal{
     user-select: none;
     width: 100%;
@@ -71,6 +67,23 @@
 .slider_btn_right .arrow_icon{
     position: absolute;
     right: 10px;
+}
+.container_info_trainer{
+    position: absolute;
+    top: 0;
+    right: 20%;
+    height: 100%;
+    display: flex;
+}
+.info_trainer{
+    height: 70%;
+    margin: auto auto 0 0;
+}
+.info_trainer h3{
+    color: #C5E6A6;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
 }
 .slider_not_found > h5{
     font-size: 1.5rem;

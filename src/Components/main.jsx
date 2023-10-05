@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import "../Styles/main.css"
-import imagen5 from '../img/imagen5.webp'
-import imagen6 from '../img/imagen6.webp'
-import imagen7 from '../img/imagen7.webp'
+import sliderImg1 from '../img/sliderImg1.jpeg'
+import sliderImg2 from '../img/sliderImg2.jpg'
+import sliderImg3 from '../img/sliderImg3.webp'
+import sliderImg4 from '../img/sliderImg4.jpg'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 export const nextImage = (p_time, p_setInterval, p_animation, p_setAnimation, p_images) => {
@@ -27,10 +28,10 @@ export const scrollToSection = (ref) => {
     }
 };
 
-const main = () => {
-    const images1 = [imagen5, imagen6, imagen7];
-    const [animation1, setAnimation1] = useState(0);
-    const [timeInterval1, setTimeInterval1] = useState(15000);
+const main = ({setContacto}) => {
+    const images_1 = [sliderImg1, sliderImg2, sliderImg3, sliderImg4];
+    const [animation_1, setAnimation_1] = useState(0);
+    const [timeInterval_1, setTimeInterval_1] = useState(15000);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -56,8 +57,16 @@ const main = () => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval1, animation1, setAnimation1, images1)}><IoIosArrowBack className='arrow_icon'/></div>
-                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval1, animation1, setAnimation1, images1)}><IoIosArrowForward className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
+                
+                <div className="container_info_trainer">
+                    <div className="info_trainer">
+                        <p>Entrenador personal</p>
+                        <h3>SDN GYM</h3>
+                        <button onClick={() => setContacto(true)}>Contactame</button>
+                    </div>
+                </div>
             </div>
         </main>
     )

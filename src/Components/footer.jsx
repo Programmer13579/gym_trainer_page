@@ -23,7 +23,7 @@ const footer = () => {
                 <p><a href="#"> manumborquez@gmail.com</a></p>
             </div>
             <div className="footer-right col-md-4 col-sm-6">
-                <center><h2> <span>  SDN GYM </span></h2></center>
+                <center><h2>SDN GYM</h2></center>
                 <div className="icons">
                     <center>
                         <a href="https://www.facebook.com/manuel.borquez.9638?locale=es_LA"><FaFacebook/></a>

@@ -77,9 +77,11 @@
     margin: 0;
 }
   
-.footer-right h2 span {
+.footer-right h2 {
     color: #C5E6A6;
     font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bold;
 }
   
 .footer .menu {

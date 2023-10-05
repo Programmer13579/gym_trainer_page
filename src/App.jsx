@@ -20,7 +20,7 @@ function App() {
             <Router>
                 <Suspense fallback={<Loading/>}>
                     <Header contacto = {contacto} setContacto = {setContacto}/>
-                    <Main/>
+                    <Main setContacto = {setContacto}/>
                     <Routes>
                         <Route path="/" element={<>
                             <Suspense fallback={<Loading/>}>
