@@ -74,16 +74,31 @@
     right: 20%;
     height: 100%;
     display: flex;
+    align-items: center;
 }
 .info_trainer{
-    height: 70%;
-    margin: auto auto 0 0;
+    color: #fff;
+}
+.info_trainer p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
 .info_trainer h3{
     color: #C5E6A6;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 4rem;
+}
+.info_trainer button{
+    color: #fff;
+    background-color: #f36100;
+    border: none;
+    padding: 17px 30px 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
 }
 .slider_not_found > h5{
     font-size: 1.5rem;

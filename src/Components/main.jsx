@@ -30,12 +30,12 @@ export const scrollToSection = (ref) => {
 
 const main = ({setContacto}) => {
     const images_1 = [sliderImg1, sliderImg2, sliderImg3, sliderImg4];
-    const [animation_1, setAnimation_1] = useState(0);
-    const [timeInterval_1, setTimeInterval_1] = useState(15000);
+    const [animation1, setAnimation1] = useState(0);
+    const [timeInterval1, setTimeInterval1] = useState(15000);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            nextImage(15000, setTimeInterval1, animation1, setAnimation1, images1);
+            nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1);
         }, timeInterval1);
         return() => clearInterval(interval);
     });
@@ -44,7 +44,7 @@ const main = ({setContacto}) => {
         <main>
             <div className="container_slider_principal">
                 <div className="slider_principal" id='sliderPrincipal'>
-                    {images1.length ? images1.map((image, index) => (
+                    {images_1.length ? images_1.map((image, index) => (
                     // Creamos un div y le añadimos la clase card y el id del producto con product.id
                     <div className={`slider_section ${animation1 === index ? 'carrousel_active' : ''}`} key={'imageSlider' + index}>
                         <img src={image} alt="" className={'img_slider_principal'} />
@@ -57,8 +57,8 @@ const main = ({setContacto}) => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
-                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
                 
                 <div className="container_info_trainer">
                     <div className="info_trainer">
