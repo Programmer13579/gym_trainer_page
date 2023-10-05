@@ -63,7 +63,7 @@ const main = ({setContacto}) => {
                 <div className="container_info_trainer">
                     <div className="info_trainer">
                         <p>Entrenador personal</p>
-                        <h3>SDN GYM</h3>
+                        <h3>SDN <span>GYM</span></h3>
                         <button onClick={() => setContacto(true)}>Contactame</button>
                     </div>
                 </div>

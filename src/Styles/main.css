@@ -75,6 +75,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    background-color: rgba(0, 0, 0, .2);
 }
 .info_trainer{
     color: #fff;
@@ -85,10 +86,14 @@
     font-size: 1.2rem;
 }
 .info_trainer h3{
-    color: #C5E6A6;
+    color: #fff;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 4rem;
+}
+.info_trainer h3 span{
+    color: #f36100;
+    font-family: sans-serif;
 }
 .info_trainer button{
     color: #fff;
