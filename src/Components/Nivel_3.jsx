@@ -6,14 +6,14 @@ import imagen2 from "../img/Nivel-3_(2).png"
 import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
 
-const Nivel_3 = ({sectionNivel}) => {
+const Nivel_3 = ({SECTION_NIVEL}) => {
 
     useEffect(() => {
-        scrollToSection(sectionNivel)
+        scrollToSection(SECTION_NIVEL)
     },[]);
 
     return (
-        <div className="level_principal" ref={sectionNivel}>
+        <div className="level_principal" ref={SECTION_NIVEL}>
             <h2>NIVEL 3</h2>
             <hr />
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>

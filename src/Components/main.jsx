@@ -28,14 +28,14 @@ export const scrollToSection = (ref) => {
 };
 
 const main = () => {
-    const images_1 = [imagen5, imagen6, imagen7];
-    const [animation_1, setAnimation_1] = useState(0);
-    const [timeInterval_1, setTimeInterval_1] = useState(15000);
+    const images1 = [imagen5, imagen6, imagen7];
+    const [animation1, setAnimation1] = useState(0);
+    const [timeInterval1, setTimeInterval1] = useState(15000);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
-        }, timeInterval_1);
+            nextImage(15000, setTimeInterval1, animation1, setAnimation1, images1);
+        }, timeInterval1);
         return() => clearInterval(interval);
     });
 
@@ -43,9 +43,9 @@ const main = () => {
         <main>
             <div className="container_slider_principal">
                 <div className="slider_principal" id='sliderPrincipal'>
-                    {images_1.length ? images_1.map((image, index) => (
+                    {images1.length ? images1.map((image, index) => (
                     // Creamos un div y le añadimos la clase card y el id del producto con product.id
-                    <div className={`slider_section ${animation_1 === index ? 'carrousel_active' : ''}`} key={'imageSlider' + index}>
+                    <div className={`slider_section ${animation1 === index ? 'carrousel_active' : ''}`} key={'imageSlider' + index}>
                         <img src={image} alt="" className={'img_slider_principal'} />
                     </div>
                     )): (
@@ -56,8 +56,8 @@ const main = () => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
-                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval1, animation1, setAnimation1, images1)}><IoIosArrowBack className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval1, animation1, setAnimation1, images1)}><IoIosArrowForward className='arrow_icon'/></div>
             </div>
         </main>
     )

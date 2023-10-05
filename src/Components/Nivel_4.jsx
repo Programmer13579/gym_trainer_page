@@ -14,24 +14,24 @@ import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-const Nivel_4 = ({sectionNivel}) => {
-    const images_1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
-    const [animation_1, setAnimation_1] = useState(0);
-    const [timeInterval_1, setTimeInterval_1] = useState(10000);
+const Nivel_4 = ({SECTION_NIVEL}) => {
+    const images1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
+    const [animation1, setAnimation1] = useState(0);
+    const [timeInterval1, setTimeInterval1] = useState(10000);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            nextImage(10000, setTimeInterval_1, animation_1, setAnimation_1, images_1);
-        }, timeInterval_1);
+            nextImage(10000, setTimeInterval1, animation1, setAnimation1, images1);
+        }, timeInterval1);
         return() => clearInterval(interval);
     });
 
     useEffect(() => {
-        scrollToSection(sectionNivel)
+        scrollToSection(SECTION_NIVEL)
     },[]);
 
     return (
-        <div className="level_principal" ref={sectionNivel}>
+        <div className="level_principal" ref={SECTION_NIVEL}>
             <h2>NIVEL 4</h2>
             <hr />
             <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
@@ -40,8 +40,8 @@ const Nivel_4 = ({sectionNivel}) => {
                     <div className="imagen level_slider">
                         <div className="container_slider_principal">
                             <div className="slider_principal" id='slider_principal'>
-                                {images_1.length ? images_1.map((image, index) => (
-                                    <div className={`slider_section ${animation_1 === index ? 'carrousel_active' : ''}`} key={'imageSlider' + index}>
+                                {images1.length ? images1.map((image, index) => (
+                                    <div className={`slider_section ${animation1 === index ? 'carrousel_active' : ''}`} key={'imageSlider' + index}>
                                         <img src={image} alt="" className={'img_slider_principal'} />
                                     </div>
                                 )): (
@@ -50,8 +50,8 @@ const Nivel_4 = ({sectionNivel}) => {
                                     </div>
                                 )}
                             </div>
-                            <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
-                            <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval_1, animation_1, setAnimation_1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
+                            <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval1, animation1, setAnimation1, images1)}><IoIosArrowBack className='arrow_icon'/></div>
+                            <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval1, animation1, setAnimation1, images1)}><IoIosArrowForward className='arrow_icon'/></div>
                         </div>
                     </div>
                     <div className="info">
