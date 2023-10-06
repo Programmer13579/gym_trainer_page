@@ -70,8 +70,8 @@ const main = ({setContacto}) => {
                 </div>
                 {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
                 <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)}><IoIosArrowBack className='arrow_icon'/></div>
-                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)}><IoIosArrowForward className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => setTimeout(function(){prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)},200)}><IoIosArrowBack className='arrow_icon'/></div>
+                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => setTimeout(function(){nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)},200)}><IoIosArrowForward className='arrow_icon'/></div>
                 
                 <div className="container_info_trainer">
                     <div className="info_trainer">
