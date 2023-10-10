@@ -134,16 +134,6 @@
         transform: translateY(0px);
     }
 }
-@keyframes sliderAnimate2 {
-    0%{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 .slider_not_found > h5{
     font-size: 1.5rem;
     width: 90%;
@@ -166,10 +156,5 @@
     }
     .info_trainer button{
         font-size: 1rem;
-    }
-}
-@media screen and (max-width: 500px) {
-    .container_btn p{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
