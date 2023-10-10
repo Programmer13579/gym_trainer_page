@@ -77,11 +77,14 @@
     margin: 0;
 }
   
-.footer-right h2 {
-    color: #C5E6A6;
+.footer-right h2, .footer-right h2 span{
+    color: var(--orange);
     font-size: 4rem;
     font-family: sans-serif;
     font-weight: bold;
+}
+.footer-right h2 span{
+    color: #fff;
 }
   
 .footer .menu {

@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 70vh;
 }
 .button_seleccion{
     width: calc(100vw - 11rem);
     max-width: 700px;
-    padding: 20px 0;
 }
 .div_icon_selector{
     animation: exercise 4s linear infinite;
@@ -15,7 +15,7 @@
 .icon_selector{
     width: 5.5rem;
     height: 5.5rem;
-    color: #ff7844;
+    color: var(--orange);
 }
 .div_icon_selector:nth-child(1), .div_icon_selector:nth-child(4){
     animation-delay: 2s;

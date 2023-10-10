@@ -34,6 +34,8 @@
 }
 
 .container_btn{
+    background-color: transparent;
+    border: none;
     position: absolute;
     top: 0;
     cursor: pointer;
@@ -96,14 +98,14 @@
     margin-bottom: 20px;
 }
 .info_trainer h3 span{
-    color: #f36100;
+    color: var(--orange);
     font-family: sans-serif;
 }
 .info_trainer button{
     z-index: 3;
     cursor: pointer;
     color: #fff;
-    background-color: #f36100;
+    background-color: var(--orange);
     border: none;
     padding: 17px 30px 16px;
     letter-spacing: 1px;
@@ -140,6 +142,16 @@
     margin: auto;
 }
 @media screen and (max-width: 550px) {
+    @keyframes sliderAnimate {
+        0%{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
     .container_info_trainer{
         justify-content: center;
     }
