@@ -110,7 +110,7 @@
     height: 25px;
 }
 .Hicon_close:hover{
-    stroke: red;
+    color: red;
     cursor: pointer;
 }
 .contactanos{

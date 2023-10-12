@@ -1,3 +1,17 @@
+.level_seleccion div h2{
+    /* animation: aparecer .5s ease-in-out; */
+}
+@keyframes aparecer {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .level_seleccion{
     background-color: var(--darkreader-background);
     display: flex;
@@ -58,6 +72,9 @@
     padding: 0;
     font-variant: small-caps;
     line-height: 60px;
+}
+.button_level:nth-child(3){
+    grid-column: span 2;
 }
 @media screen and (max-width: 1100px) {
     .div_icon_selector:nth-child(2) .icon_selector, .div_icon_selector:nth-child(4) .icon_selector{

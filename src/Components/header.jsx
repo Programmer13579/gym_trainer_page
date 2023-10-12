@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import '../Styles/header.css'
-import {FaLocationDot} from 'react-icons/fa6'
-import {IoLogoWhatsapp} from 'react-icons/io'
-import {BsFillTelephoneFill, BsInstagram} from 'react-icons/bs'
-import {FaBars} from 'react-icons/fa'
+import { FaLocationDot } from 'react-icons/fa6'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { BsFillTelephoneFill, BsInstagram } from 'react-icons/bs'
+import { FaBars } from 'react-icons/fa'
+import { AiOutlineClose } from 'react-icons/ai'
 import logo from '../img/SDN_logo_small.jpg'
 
 const header= ({contacto, setContacto}) => {
@@ -39,19 +40,7 @@ const header= ({contacto, setContacto}) => {
         <div className={`containerInfoContact ${contacto? 'activecontainerInfoContact' : ''}`}>
             <div className={`infoContact ${contacto? 'activeinfoContact' : ''}`}>
                 {/* Este svg es la X y al precionarla cierra el formulario de contacto. */}
-                <svg xmlns="http://www.w3.org/2000/svg"
-		        	fill="none"
-		        	viewBox="0 0 24 24"
-		        	strokeWidth="1.5"
-		        	stroke="currentColor"
-		        	className="Hicon_close"
-                    onClick={() => setContacto(false)}>
-		        	<path
-		        		strokeLinecap="round"
-		        		strokeLinejoin="round"
-		        		d="M6 18L18 6M6 6l12 12"
-		        	/>
-		        </svg>
+                <AiOutlineClose className='Hicon_close' onClick={() => setContacto(false)}/>
                 <div className="titleContact">
                     <img src={logo} alt="logo" className='logoSmallContact'/>
                     <h6>"SDN GYM" - Contactos</h6>

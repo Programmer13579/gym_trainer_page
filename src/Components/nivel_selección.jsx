@@ -16,10 +16,10 @@ const nivel_selección = () => {
             <div>
                 <h2>Selecciona un nivel</h2>
                 <div className="button_seleccion">
-                    <Link className="button_level btn_seleccion" to="nivel_1">Nivel 1</Link>
-                    <Link className="button_level btn_seleccion" to="nivel_2">Nivel 2</Link>
-                    <Link className="button_level btn_seleccion" to="nivel_3">Nivel 3</Link>
-                    <Link className="button_level btn_seleccion" to="nivel_4">Nivel 4</Link>
+                    <Link className="button_level btn_seleccion" to="nivel_1">Alimentacion</Link>
+                    <Link className="button_level btn_seleccion" to="nivel_2">Movimiento</Link>
+                    <Link className="button_level btn_seleccion" to="nivel_3">Descanso</Link>
+                    {/* <Link className="button_level btn_seleccion" to="nivel_4">Avanzado</Link> */}
                 </div>
             </div>
             <div className='div_icon_selector'>
