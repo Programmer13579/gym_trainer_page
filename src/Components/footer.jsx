@@ -32,21 +32,21 @@ const footer = () => {
     return (
         <footer className="footer">
             <div className="footer-left col-md-4 col-sm-6">
-                <h3 ref={element_1}>¿Quien soy?</h3>
-                <p className="about" ref={element_2}>
+                <h3 className='desaparecer' ref={element_1}>¿Quien soy?</h3>
+                <p className="about desaparecer" ref={element_2}>
                   Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
                   ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
                 </p>
             </div>
             <div className="footer-center col-md-4 col-sm-6">
-                <h3 ref={element_3}>Contactame</h3>
-                <p ref={element_4}>Aguilares, Tucuman</p>
-                <p ref={element_5}>(+54) 3865-266434</p>
-                <p ref={element_6}><a href="#"> manumborquez@gmail.com</a></p>
+                <h3 className='desaparecer' ref={element_3}>Contactame</h3>
+                <p className='desaparecer' ref={element_4}>Aguilares, Tucuman</p>
+                <p className='desaparecer' ref={element_5}>(+54) 3865-266434</p>
+                <p className='desaparecer' ref={element_6}><a href="#"> manumborquez@gmail.com</a></p>
             </div>
             <div className="footer-right col-md-4 col-sm-6">
-                <center><h2 ref={element_7}><span>SDN</span> GYM</h2></center>
-                <div className="icons" ref={element_8}>
+                <center><h2 className='desaparecer' ref={element_7}><span>SDN</span> GYM</h2></center>
+                <div className="icons desaparecer" ref={element_8}>
                     <center>
                         <a href="https://www.facebook.com/manuel.borquez.9638?locale=es_LA"><FaFacebook/></a>
                         <a href="https://www.instagram.com/sdngym15/"><BsInstagram/></a>
@@ -55,7 +55,7 @@ const footer = () => {
                         <a href="#"><BsYoutube/></a>
                     </center>
                 </div>
-                <center> <p className="name" ref={element_9}><span> Developed by | Ligth & Soft &copy; 2023  |</span></p> </center>
+                <center> <p className="name desaparecer" ref={element_9}><span> Developed by | Ligth & Soft &copy; 2023  |</span></p> </center>
             </div>
         </footer>
     )

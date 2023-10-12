@@ -6,7 +6,7 @@ export const checkAndAnimateOnLoad = (elementRef) => {
   const windowHeight = window.innerHeight;
 
   if (elementPosition - windowHeight <= 0) {
-    element.classList.add('animationAparecer');
+    element.classList.add('animation_aparecer');
   }
 };
 
@@ -18,7 +18,7 @@ export const useScrollEffect = (elementRef) => {
       const windowHeight = window.innerHeight;
 
       if (elementPosition - windowHeight <= 0) {
-        element.classList.add('animationAparecer');
+        element.classList.add('animation_aparecer');
       }
     };
 
@@ -64,7 +64,7 @@ export const useScrollEffect = (elementRef) => {
 //     return (
 //       <div
 //         ref={this.animatedElementRef}
-//         className={`elemento-a-animar ${animate ? 'animationAparecer' : ''}`}
+//         className={`elemento-a-animar ${animate ? 'animation_aparecer' : ''}`}
 //       >
 //         Mi Elemento
 //       </div>

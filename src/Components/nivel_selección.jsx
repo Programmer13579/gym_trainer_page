@@ -34,12 +34,12 @@ const nivel_selección = () => {
                 <LiaDumbbellSolid className='icon_selector'/>
             </div>
             <div>
-                <h2 ref={element_1}>Selecciona un nivel</h2>
+                <h2 className='desaparecer' ref={element_1}>Selecciona un nivel</h2>
                     
                 <div className="button_seleccion">
-                    <Link className="button_level btn_seleccion" to="nivel_1" ref={element_2} >Alimentacion</Link>
-                    <Link className="button_level btn_seleccion" to="nivel_2" ref={element_3}>Movimiento</Link>
-                    <Link className="button_level btn_seleccion" to="nivel_3" ref={element_4}>Descanso</Link>
+                    <Link className="button_level btn_seleccion desaparecer" to="nivel_1" ref={element_2} >Alimentacion</Link>
+                    <Link className="button_level btn_seleccion desaparecer" to="nivel_2" ref={element_3}>Movimiento</Link>
+                    <Link className="button_level btn_seleccion desaparecer" to="nivel_3" ref={element_4}>Descanso</Link>
                     {/* <Link className="button_level btn_seleccion" to="nivel_4">Avanzado</Link> */}
                 </div>
             </div>

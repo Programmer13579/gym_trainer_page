@@ -42,8 +42,11 @@ body{
     background-position: right center;
     transform: scaleX(1.03);
 }
-.animationAparecer{
-    animation: aparecer .5s ease-in-out;
+.desaparecer{
+    opacity: 0;
+}
+.animation_aparecer{
+    animation: aparecer .5s ease-in-out forwards;
 }
 @keyframes aparecer {
     from {
