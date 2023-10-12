@@ -1,46 +1,75 @@
-import React, { Component } from 'react';
-import '../Styles/AnimatedElement.css'
+import { useEffect } from 'react';
 
-class AnimatedElement extends Component {
-  constructor(props) {
-    super(props);
-    this.animatedElementRef = React.createRef();
-    this.handleScroll = this.handleScroll.bind(this);
-    this.state = {
-      animate: false,
+export const checkAndAnimateOnLoad = (elementRef) => {
+  const element = elementRef.current;
+  const elementPosition = element.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (elementPosition - windowHeight <= 0) {
+    element.classList.add('animationAparecer');
+  }
+};
+
+export const useScrollEffect = (elementRef) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = elementRef.current;
+      const elementPosition = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementPosition - windowHeight <= 0) {
+        element.classList.add('animationAparecer');
+      }
     };
-  }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
+    window.addEventListener('scroll', handleScroll);
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [elementRef]);
+};
 
-  handleScroll() {
-    const element = this.animatedElementRef.current;
-    const elementPosition = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+// class AnimatedElement extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.animatedElementRef = React.createRef();
+//     this.handleScroll = this.handleScroll.bind(this);
+//     this.state = {
+//       animate: false,
+//     };
+//   }
 
-    if (elementPosition - windowHeight <= 0) {
-      this.setState({ animate: true });
-    }
-  }
+//   componentDidMount() {
+//     window.addEventListener('scroll', this.handleScroll);
+//   }
 
-  render() {
-    const { animate } = this.state;
+//   componentWillUnmount() {
+//     window.removeEventListener('scroll', this.handleScroll);
+//   }
 
-    return (
-      <div
-        ref={this.animatedElementRef}
-        className={`elemento-a-animar ${animate ? 'animate' : ''}`}
-      >
-        Mi Elemento
-      </div>
-    );
-  }
-}
+//   handleScroll() {
+//     const element = this.animatedElementRef.current;
+//     const elementPosition = element.getBoundingClientRect().top;
+//     const windowHeight = window.innerHeight;
 
-export default AnimatedElement;
+//     if (elementPosition - windowHeight <= 0) {
+//       this.setState({ animate: true });
+//     }
+//   }
+
+//   render() {
+//     const { animate } = this.state;
+
+//     return (
+//       <div
+//         ref={this.animatedElementRef}
+//         className={`elemento-a-animar ${animate ? 'animationAparecer' : ''}`}
+//       >
+//         Mi Elemento
+//       </div>
+//     );
+//   }
+// }
+
+// export default AnimatedElement;

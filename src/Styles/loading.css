@@ -1,6 +1,6 @@
 .loading-container{
   flex-grow: 1;
-  min-height: 80vh;
+  min-height: 100vh;
   width: 100%;
   background-color: var(--fondo-loading);
   place-content: center;

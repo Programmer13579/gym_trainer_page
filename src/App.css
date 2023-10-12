@@ -27,7 +27,7 @@ body{
     line-height: 60px;
     margin: auto;
     height: 60px;
-    width: 200px;
+    width: 220px;
     border-radius: 10px;
     border: none;
     font-size: 1.88rem;
@@ -41,6 +41,19 @@ body{
 .button_level:hover{
     background-position: right center;
     transform: scaleX(1.03);
+}
+.animationAparecer{
+    animation: aparecer .5s ease-in-out;
+}
+@keyframes aparecer {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 450px) {
     .button_level{
