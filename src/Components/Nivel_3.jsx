@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import "../Styles/niveles.css"
 import { scrollToSection } from './main'
-import imagen1 from "../img/Nivel-3_(1).png"
-import imagen2 from "../img/Nivel-3_(2).png"
+import imagen1 from "../img/Descanso_1.jpg"
 import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
 
@@ -14,9 +13,7 @@ const Nivel_3 = ({SECTION_NIVEL}) => {
 
     return (
         <div className="level_principal" ref={SECTION_NIVEL}>
-            <h2>NIVEL 3</h2>
-            <hr />
-            <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
+            <h2><FaDumbbell className='dumbbell'/>Descanso<FaDumbbell className='dumbbell'/></h2>
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
@@ -24,31 +21,15 @@ const Nivel_3 = ({SECTION_NIVEL}) => {
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>titulo</h5>
+                        <h5>LA IMPORTANCIA DEL DESCANSO</h5>
                         <br /><hr /><br />
-                        <p>NUTRIENTES Son sustancias contenidas en alimentos. Los requeridos en grandes cantidades son llamados MACROnutrientes y los requeridos en cantidades pequeñas se les conoce como MICROnutrientes. MACRONUTRIENTES: Proporcionan energía al organismo. Además, sirven para reparar y construir estructuras, promover el crecimiento y regular procesos metabólicos. Este grupo está constituido por: • Proteínas • Grasas • Hidratos de Carbono MICRONUTRIENTES: Permiten el desarrollo de procesos metabólicos, previenen infecciones y contribuyen al crecimiento (son necesarios para el mantenimiento de la salud) y no producen energía como los macronutrientes. Aquí encontramos: • Vitaminas • Minerales</p>
+                        <p>Hay que darle la importancia que se merece al descanso. Existe una relación inversamente proporcional entre la cantidad de estrés y de descanso que debemos respetar.<br /><br />TAREA: Programar los días de descanso relacionandolos con los días de entrenamiento. Por ejemplo, si un lunes tengo un día cargado de movimiento (ir al gimnasio y entrenar mi deporte) el martes podría descansar en inactividad o simplemente salir a caminar (descanso activo).</p>
                         <br />
-                        <a href="https://www.instagram.com/p/CZAhwG2pQj8/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
+                        <a href="https://www.instagram.com/p/CvGX2lOpOrA/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
-            <h3><FaDumbbell className='dumbbell'/>Movimiento<FaDumbbell className='dumbbell'/></h3>
-            <div className='level_container'>
-                <div className="datos">
-                    <div className="imagen">
-                        <img src={imagen2} alt="" />
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>titulo</h5>
-                        <br /><hr /><br />
-                        <p>TIPOS DE RUTINAS DE ENTRENAMIENTO Estos son algunos ejemplos de cómo se puede organizar una rutina en el gimnasio: • Divididas por GRUPOS MUSCULARES. Se trabaja diferentes musculos en una misma sesion. Por ejm; . sesion 1 - pectorales, deltoides y tríceps / cuádriceps y pantorrillas. . sesión 2 - dorsales, trapecio y bíceps / Isquiosurales y glúteo. • Divididas por EJERCICIOS DE TORSO Y PIERNA. Se trabaja un conjunto de ejercicios para el tren superior (TS) en una sesión, y en la otra, ejercicios para el tren inferior (TI). Por ejm; . sesión 1 - Tren superior . sesión 2 - Tren inferior. • Divididas por PATRONES DE MOVIMIENTO. Se trabaja por sesión un patron de movimiento o conjunto de patrones. Por ejm; . sesión 1 - Empujes y Dominantes de rodilla . sesión 2 - Tracciones y Dominantes de cadera. • De CUERPO COMPLETO. Se trabaja en una misma sesión ejercicios para el TS y TI. Por ejm; . sesión 1, 2 y 3 - tren superior e inferior. • División MIXTA. Son combinaciones de las divisiones anteriores. por ejm; Rutina dividida por 'Ejercicios de torso y pierna' + rutina dividida por 'Patrones de movimiento' + rutina dividida por 'Grupos musculares' . sesión 1 - Tren Superior; Empujes, Tracciones, bíceps y triceps. . sesión 2 - Tren Inferior; Dominantes de rodilla, Dominantes de cadera y pantorrilas.</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/CeL7E6juEiO/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <Link className="button_level btn_next_level" to="/nivel_4">Siguiente nivel</Link>
+            <Link className="button_level btn_next_level" to="/">Volver al inicio</Link>
         </div>
     )
 }

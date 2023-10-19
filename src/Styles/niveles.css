@@ -3,20 +3,15 @@
     padding: 15px 0;
     text-align: center;
 }
-.level_principal > h2, .level_principal > h3{
+.level_principal > h2{
     font-size: 3.5rem;
     color: rgb(10, 200, 238);
     text-align: center;
     width: max-content;
     margin: 20px auto;
 }
-.level_principal > h3{
-    color: var(--darkreader-text-gray);
-    font-size: 2.5rem;
-    font-variant: small-caps;
-}
 .dumbbell{
-    font-size: 2rem;
+    font-size: 2.5rem;
     rotate: -40deg;
     margin: 0 10px;
     color: var(--orange);

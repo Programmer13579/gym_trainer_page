@@ -10,7 +10,6 @@ const NivelSeleccion = lazy(() => import('./Components/nivel_selección'));
 const Nivel1 = lazy(() => import('./Components/Nivel_1'));
 const Nivel2 = lazy(() => import('./Components/Nivel_2'));
 const Nivel3 = lazy(() => import('./Components/Nivel_3'));
-const Nivel4 = lazy(() => import('./Components/Nivel_4'));
 
 function App() {
     const [contacto, setContacto] = useState(false);
@@ -27,24 +26,19 @@ function App() {
                                 <NivelSeleccion/>
                             </Suspense>
                         </>}/>
-                        <Route path="nivel_1" element={<>
+                        <Route path="Alimentacion" element={<>
                             <Suspense fallback={<Loading/>}>
                                 <Nivel1 SECTION_NIVEL = {SECTION_NIVEL}/>
                             </Suspense>
                         </>}/>
-                        <Route path="nivel_2" element={<>
+                        <Route path="Movimiento" element={<>
                             <Suspense fallback={<Loading/>}>
                                 <Nivel2 SECTION_NIVEL = {SECTION_NIVEL}/>
                             </Suspense>
                         </>}/>
-                        <Route path="nivel_3" element={<>
+                        <Route path="Descanso" element={<>
                             <Suspense fallback={<Loading/>}>
                                 <Nivel3 SECTION_NIVEL = {SECTION_NIVEL}/>
-                            </Suspense>
-                        </>}/>
-                        <Route path="nivel_4" element={<>
-                            <Suspense fallback={<Loading/>}>
-                                <Nivel4 SECTION_NIVEL = {SECTION_NIVEL}/>
                             </Suspense>
                         </>}/>
                         <Route path="*" element={<>

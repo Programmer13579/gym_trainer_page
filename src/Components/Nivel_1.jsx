@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import "../Styles/niveles.css"
 import { prevImage, nextImage, scrollToSection } from './main'
-import imagen1 from "../img/Nivel-1_(1).jpg"
-import imagen2 from "../img/Nivel-1_(2).jpg"
-import imagen3 from "../img/Nivel-1_(3).jpg"
-import imagen4 from "../img/Nivel-1_(4).jpg"
-import imagen5 from "../img/Nivel-1_(5).jpg"
-import imagen6 from "../img/Nivel-1_(6).jpg"
-import imagen7 from "../img/Nivel-1_(7).jpg"
-import imagen8 from "../img/Nivel-1_(8).jpg"
-import imagen9 from "../img/Nivel-1_(9).jpg"
+import imagen1 from "../img/Alimentacion_1.jpg"
+import imagen2 from "../img/Alimentacion_2.jpg"
+import imagen3 from "../img/Alimentacion_3.jpg"
+import imagen4 from "../img/Alimentacion_4.jpg"
+import imagen5 from "../img/Alimentacion_5.jpg"
+import imagen6 from "../img/Alimentacion_7.png"
+import imagen7 from "../img/Alimentacion_8.png"
+import imagen8 from "../img/Alimentacion_9.jpg"
 import { Link } from 'react-router-dom';
 import { FaDumbbell } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Nivel_1 = ({SECTION_NIVEL}) => {
-    const images1 = [imagen1, imagen6, imagen7, imagen8, imagen9];
+    const images1 = [imagen1, imagen2, imagen3, imagen4, imagen5];
     const [animation1, setAnimation1] = useState(0);
     const [timeInterval1, setTimeInterval1] = useState(10000);
 
@@ -32,9 +31,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
     
     return (
         <div className="level_principal" ref={SECTION_NIVEL}>
-            <h2>NIVEL 1</h2>
-            <hr />
-            <h3><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h3>
+            <h2><FaDumbbell className='dumbbell'/>Alimentación<FaDumbbell className='dumbbell'/></h2>
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen level_slider">
@@ -67,7 +64,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen2} alt="" />
+                        <img src={imagen6} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
@@ -79,54 +76,37 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
                     </div>
                 </div>
             </div>
-            <h3><FaDumbbell className='dumbbell'/>Movimiento<FaDumbbell className='dumbbell'/></h3>
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen3} alt="" />
+                        <img src={imagen7} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>ACTIVIDAD Y EJERCICIO FÍSICO</h5>
+                        <h5>titulo</h5>
                         <br /><hr /><br />
-                        <p>Saber diferenciar la actividad física del ejercicio físico es el primer paso para sistematizar el movimiento.<br /><br />TAREA: Hacer un listado de tareas de movimiento, en el cuál colocaremos cuántos entrenamientos realizaremos a la semana. Por ejemplo: ir al gimnasio 3 veces veces por semana, ir a caminar 1 vez veces por semana y nadar 2 veces por semana.</p>
+                        <p>CALORÍA (cal) Es una unidad de energía; cantidad de calor necesario para elevar la temperatura de 1 gramo de agua en 1°C, (de 14,5 ºC a 15,5 ºC). También se la llamada "caloría-gramo" o "caloría pequeña". Una variante empleada en nutrición es sustituir la cantidad de agua referida por 1 kg. A esta variante basada en kilogramo se la llama "kilocaloría (kcal)" o "caloría grande". Caloría (Cal; con «C» mayúscula). Por lo tanto, 1 kilocaloría (kcal) = 1000 calorías (cal). . En nuestro día a día necesitamos un aporte continuo de ENERGÍA para: • llevar a cabo todas nuestras funciones vitales; cardíaca, nerviosa, digestiva, respiratoria, reproductiva, etc. • realizar trabajo muscular, desarrollando; actividad y ejercicio físico. • producir procesos biosintéticos relacionados con el crecimiento y reparación de tejidos. • mantener la temperatura corporal. Etc. La energía que necesitamos para poder llevar a cabo todo esto es suministrada por los alimentos que consumimos.</p>
                         <br />
-                        <a href="https://www.instagram.com/p/Cj62mUzuz4C/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
+                        <a href="https://www.instagram.com/p/CZkgea7pulp/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen4} alt="" />
+                        <img src={imagen8} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>¿QUÉ QUIERO ENTRENAR?</h5>
+                        <h5>titulo</h5>
                         <br /><hr /><br />
-                        <p>Debemos conocer las capacidades físicas básicas para direccionar el entrenamiento dependiendo nuestros objetivos.<br /><br />TAREA: Dar dirección a nuestro entrenamiento es ser específicos a la capacidad a mejorar, por eso nos centraremos a estimular una de ellas a la vez. Vamos a proponernos un lapso de tiempo en meses para trabajarla. Por ejemplo: 2 meses (Cuando se cumpla el tiempo y nos adaptemos a él podemos sumar más capacidades).</p>
+                        <p>NUTRIENTES Son sustancias contenidas en alimentos. Los requeridos en grandes cantidades son llamados MACROnutrientes y los requeridos en cantidades pequeñas se les conoce como MICROnutrientes. MACRONUTRIENTES: Proporcionan energía al organismo. Además, sirven para reparar y construir estructuras, promover el crecimiento y regular procesos metabólicos. Este grupo está constituido por: • Proteínas • Grasas • Hidratos de Carbono MICRONUTRIENTES: Permiten el desarrollo de procesos metabólicos, previenen infecciones y contribuyen al crecimiento (son necesarios para el mantenimiento de la salud) y no producen energía como los macronutrientes. Aquí encontramos: • Vitaminas • Minerales</p>
                         <br />
-                        <a href="https://www.instagram.com/p/Cuimo_8OpDV/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
+                        <a href="https://www.instagram.com/p/CZAhwG2pQj8/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
                     </div>
                 </div>
             </div>
-            <h3><FaDumbbell className='dumbbell'/>Descanso<FaDumbbell className='dumbbell'/></h3>
-            <div className='level_container'>
-                <div className="datos">
-                    <div className="imagen">
-                        <img src={imagen5} alt="" />
-                    </div>
-                    <div className="info">
-                        <hr /><br />
-                        <h5>LA IMPORTANCIA DEL DESCANSO</h5>
-                        <br /><hr /><br />
-                        <p>Hay que darle la importancia que se merece al descanso. Existe una relación inversamente proporcional entre la cantidad de estrés y de descanso que debemos respetar.<br /><br />TAREA: Programar los días de descanso relacionandolos con los días de entrenamiento. Por ejemplo, si un lunes tengo un día cargado de movimiento (ir al gimnasio y entrenar mi deporte) el martes podría descansar en inactividad o simplemente salir a caminar (descanso activo).</p>
-                        <br />
-                        <a href="https://www.instagram.com/p/CvGX2lOpOrA/?utm_source=ig_web_copy_link" target='_blank' rel='noopener noreferrer'>Ver en instagram</a>
-                    </div>
-                </div>
-            </div>
-            <Link className="button_level btn_next_level" to="/nivel_2">Siguiente nivel</Link>
+            <Link className="button_level btn_next_level" to="/Movimiento">Movimiento</Link>
         </div>
     )
 }
