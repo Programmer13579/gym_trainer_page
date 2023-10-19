@@ -1,9 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import "../Styles/main.css"
-import sliderImg1 from '../img/sliderImg1.jpeg'
-import sliderImg2 from '../img/sliderImg2.jpg'
-import sliderImg3 from '../img/sliderImg3.webp'
-import sliderImg4 from '../img/sliderImg4.jpg'
+// import sliderImg1 from '../img/sliderImg1.jpeg'
+// import sliderImg2 from '../img/sliderImg2.jpg'
+// import sliderImg3 from '../img/sliderImg3.webp'
+// import sliderImg4 from '../img/sliderImg4.jpg'
+import sliderImg1 from '../img/sliderImg1-.jpg'
+import sliderImg2 from '../img/sliderImg2-.jpg'
+import sliderImg3 from '../img/sliderImg3-.jpg'
+import sliderImg4 from '../img/sliderImg4-.jpg'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 
@@ -30,7 +34,7 @@ export const scrollToSection = (ref) => {
 };
 
 const main = ({setContacto}) => {
-    const images_1 = [sliderImg1, sliderImg2, sliderImg3, sliderImg4];
+    const images_1 = [sliderImg1, sliderImg3, sliderImg2, sliderImg4];
     const [animation1, setAnimation1] = useState(0);
     const [timeInterval1, setTimeInterval1] = useState(15000);
     const [activeButton, setActiveButton] = useState(true);
@@ -72,10 +76,6 @@ const main = ({setContacto}) => {
                     </div>
                     )}
                 </div>
-                {/* <div className="containerBtn sliderbtnLeft" id='sliderbtnLeft' onClick={() => prevImage(10000)}><FontAwesomeIcon icon={faAngleLeft} /></div>
-                <div className="containerBtn sliderbtnRight" id='sliderbtnRight' onClick={() => nextImage(10000)}><FontAwesomeIcon icon={faAngleRight} /></div> */}
-                {/* <div className="container_btn slider_btn_left" id='sliderbtnLeft' onClick={() => setTimeout(function(){prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1); sliderTextAnimation();},200)}><IoIosArrowBack className='arrow_icon'/></div>
-                <div className="container_btn slider_btn_right" id='sliderbtnRight' onClick={() => setTimeout(function(){nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1); sliderTextAnimation();},200)}><IoIosArrowForward className='arrow_icon'/></div> */}
                 <button className="container_btn slider_btn_left" id='sliderbtnLeft' disabled={!activeButton} onClick={() => {prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1); sliderTextAnimation();}}><IoIosArrowBack className='arrow_icon'/></button>
                 <button className="container_btn slider_btn_right" id='sliderbtnRight' disabled={!activeButton} onClick={() => {nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1); sliderTextAnimation();}}><IoIosArrowForward className='arrow_icon'/></button>
                 

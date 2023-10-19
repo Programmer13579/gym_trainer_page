@@ -79,6 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    background-color: rgba(0, 0, 0, .2);
 }
 .info_trainer{
     color: #fff;
