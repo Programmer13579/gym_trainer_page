@@ -8,9 +8,7 @@ import { FaBars } from 'react-icons/fa'
 import { AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 import { PiTiktokLogo } from 'react-icons/pi'
 import logo from '../img/SDN_logo_small.jpg'
-
 import profileImg from '../img/borquez.png'
-import './style.css'
 
 
 
@@ -47,10 +45,12 @@ const header= ({contacto, setContacto}) => {
                 <div className={`infoContact ${contacto? 'activeinfoContact' : ''}`}>
                     {/* Este svg es la X y al precionarla cierra el formulario de contacto. */}
                     <AiOutlineClose className='Hicon_close' onClick={() => setContacto(false)}/>
+                    
                     <div className="titleContact">
                         <img src={logo} alt="logo" className='logoSmallContact'/>
                         <h6>"SDN GYM" - Contactos</h6>
                     </div>
+
                     <ul className='contactanos'>
                         {/* Redirigimos a la ubicacion de la empresa en google maps */}
                         <li className='contactos'><a href="https://www.google.com.gt/maps/place/La+Oferta/@-27.3477648,-65.5910017,18z/data=!4m10!1m2!2m1!1sla+oferta!3m6!1s0x9423cf5c99bfe997:0x1e14071c27ac474d!8m2!3d-27.3466769!4d-65.5894634!15sCglsYSBvZmVydGFaCyIJbGEgb2ZlcnRhkgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F11b7xmqvg8?entry=ttu" target='_blank' rel="noopener noreferrer"><FaLocationDot className='iconContact'/>Buenos Aires 60, Concepción, Tucumán, Argentina.</a></li>
@@ -61,41 +61,38 @@ const header= ({contacto, setContacto}) => {
                         <li className='contactos'><a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer"><BsInstagram className='iconContact'/>@sdngym15</a></li>
                     </ul>
 
-
-
                     <div class="container_index">
-                        <div class="profile-wrapper">
-                            <div class="profile">
-                                <div class="profile-image">
-                                    <img src={profileImg} alt="Profile"/>
-                                </div>
-                                <ul class="social-icons">
-                                    <li>
-                                        <a href="https://www.instagram.com/sdngym15/" title="Instagram">
-                                            <AiOutlineInstagram/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#Whatsapp" title="Whatsapp">
-                                            <AiOutlineWhatsApp/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#threads" title="Tiktok">
-                                            <PiTiktokLogo/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#linkedin" title="Celular">
-                                            <BsTelephone/>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="profile-name">
-                                    <h2>Manuel Borquez</h2>
-                                    <div class="profile-bio">Entrenador personal. Estudiante de Educación Fisica. Estudiante de Kinesiologia.</div>
-                                </div>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src={profileImg} alt="Profile"/>
                             </div>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer" title="Instagram">
+                                        <AiOutlineInstagram/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?phone=3865-266434&text=Hola, estoy interesado en contratar tu servicio de entrenador personal" target='_blank' rel="noopener noreferrer" title="Whatsapp">
+                                        <AiOutlineWhatsApp/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Tiktok" title="Tiktok">
+                                        <PiTiktokLogo/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer" title="Celular">
+                                        <BsTelephone/>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="profile-name">
+                                <h2>Manuel Borquez</h2>
+                                <div class="profile-bio">Entrenador personal. Estudiante de Educación Fisica. Estudiante de Kinesiologia.</div>
+                            </div>
+                            <h2 className='quien_soy'>¿Quien soy?</h2>
                         </div>
                     </div>
                 </div>
