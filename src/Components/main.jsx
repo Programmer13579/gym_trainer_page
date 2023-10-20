@@ -4,10 +4,12 @@ import "../Styles/main.css"
 // import sliderImg2 from '../img/sliderImg2.jpg'
 // import sliderImg3 from '../img/sliderImg3.webp'
 // import sliderImg4 from '../img/sliderImg4.jpg'
-import sliderImg1 from '../img/sliderImg1-.jpg'
-import sliderImg2 from '../img/sliderImg2-.jpg'
-import sliderImg3 from '../img/sliderImg3-.jpg'
-import sliderImg4 from '../img/sliderImg4-.jpg'
+import sliderImg1 from '../img/sliderImg1.jpg'
+import sliderImg2 from '../img/sliderImg2.jpg'
+import sliderImg3 from '../img/sliderImg3.jpg'
+import sliderImg4 from '../img/sliderImg4.jpg'
+import sliderImg5 from '../img/sliderImg5.jpg'
+import sliderImg6 from '../img/sliderImg6.webp'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 
@@ -34,7 +36,7 @@ export const scrollToSection = (ref) => {
 };
 
 const main = ({setContacto}) => {
-    const images_1 = [sliderImg1, sliderImg3, sliderImg2, sliderImg4];
+    const images_1 = [sliderImg1, sliderImg3, sliderImg2, sliderImg4, sliderImg5, sliderImg6];
     const [animation1, setAnimation1] = useState(0);
     const [timeInterval1, setTimeInterval1] = useState(15000);
     const [activeButton, setActiveButton] = useState(true);
