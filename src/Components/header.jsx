@@ -1,10 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import '../Styles/header.css'
-import { FaLocationDot } from 'react-icons/fa6'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { BsFillTelephoneFill, BsInstagram, BsTelephone } from 'react-icons/bs'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaTiktok } from 'react-icons/fa'
 import { AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 import { PiTiktokLogo } from 'react-icons/pi'
 import logo from '../img/SDN_logo_small.jpg'
@@ -52,8 +51,7 @@ const header= ({contacto, setContacto}) => {
                     </div>
 
                     <ul className='contactanos'>
-                        {/* Redirigimos a la ubicacion de la empresa en google maps */}
-                        <li className='contactos'><a href="https://www.google.com.gt/maps/place/La+Oferta/@-27.3477648,-65.5910017,18z/data=!4m10!1m2!2m1!1sla+oferta!3m6!1s0x9423cf5c99bfe997:0x1e14071c27ac474d!8m2!3d-27.3466769!4d-65.5894634!15sCglsYSBvZmVydGFaCyIJbGEgb2ZlcnRhkgEOY2xvdGhpbmdfc3RvcmXgAQA!16s%2Fg%2F11b7xmqvg8?entry=ttu" target='_blank' rel="noopener noreferrer"><FaLocationDot className='iconContact'/>Buenos Aires 60, Concepción, Tucumán, Argentina.</a></li>
+                        <li className='contactos'><a href="https://www.tiktok.com/@manumborquez" target='_blank' rel="noopener noreferrer" title="Tiktok"><FaTiktok  className='iconContact'/>@manumborquez</a></li>
                         {/* Redirigimos a un chat de WhatsApp de la empresa con un mensaje predeterminado */}
                         <li className='contactos'><a href="https://api.whatsapp.com/send?phone=3865-266434&text=Hola, estoy interesado en contratar tu servicio de entrenador personal" target='_blank' rel="noopener noreferrer"><IoLogoWhatsapp className='iconContact'/>WhatsApp</a></li>
                         {/* Redirigimos a la aplicación de telefono con el numero de la empresa ingresado para poder llamar o agregar el contacto */}
@@ -78,7 +76,7 @@ const header= ({contacto, setContacto}) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#Tiktok" title="Tiktok">
+                                    <a href="https://www.tiktok.com/@manumborquez" target='_blank' rel="noopener noreferrer" title="Tiktok">
                                         <PiTiktokLogo/>
                                     </a>
                                 </li>

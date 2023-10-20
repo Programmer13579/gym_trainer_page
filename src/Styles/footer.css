@@ -113,7 +113,7 @@
 
 @media (max-width: 1190px) {
     .footer {
-        padding: 15px;
+        padding: 40px 15px;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         row-gap: 40px;
@@ -122,15 +122,6 @@
 
 @media (max-width: 720px) {
     .footer {
-        padding: 5px;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-    }
-    .footer .footer-left,
-    .footer .footer-center,
-    .footer .footer-right {
-        max-width: 600px;
-        text-align: center;
-        grid-column: span 1;
+        padding: 40px 5px;
     }
 }
