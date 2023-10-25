@@ -7,10 +7,6 @@
     height: 100%;
     cursor: pointer;
 }
-.navLink:hover{
-    transform: scale(1.3);
-    transition: 0.6s;
-}
 .navLink.active {
     color: #15cdfc;
     transform: scale(1.3);
@@ -19,7 +15,6 @@
     background: #000;
     height: 80px;
     display: flex;
-    justify-content: space-between;
     z-index: 10;
 }
 .logoSmall{
@@ -34,7 +29,27 @@
 .navMenu{
     display:flex;
     align-items:center;
+    justify-content: center;
     margin-right: -24px;
+    width: 100%;
+}
+.navMenu p ul{
+    display: none;
+    position: absolute;
+    top: 80px;
+    z-index: 100;
+    background-color: #fff;
+}
+.navMenu p ul a{
+    text-decoration: none;
+    color: #000;
+}
+.navMenu p ul a:hover{
+    color: #15cdfc;
+}
+.navMenu p:hover ul{
+    display: flex;
+    flex-direction: column;
 }
 .navBtn{
     display:flex;

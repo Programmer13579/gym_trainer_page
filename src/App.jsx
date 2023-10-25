@@ -10,6 +10,7 @@ const NivelSeleccion = lazy(() => import('./Components/nivel_selección'));
 const Nivel1 = lazy(() => import('./Components/Nivel_1'));
 const Nivel2 = lazy(() => import('./Components/Nivel_2'));
 const Nivel3 = lazy(() => import('./Components/Nivel_3'));
+const Services = lazy(() => import('./Components/Services'));
 
 function App() {
     const [contacto, setContacto] = useState(false);
@@ -39,6 +40,11 @@ function App() {
                         <Route path="Descanso" element={<>
                             <Suspense fallback={<Loading/>}>
                                 <Nivel3 SECTION_NIVEL = {SECTION_NIVEL}/>
+                            </Suspense>
+                        </>}/>
+                        <Route path="Servicios" element={<>
+                            <Suspense fallback={<Loading/>}>
+                                <Services/>
                             </Suspense>
                         </>}/>
                         <Route path="*" element={<>

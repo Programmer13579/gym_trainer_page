@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../Styles/header.css'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { BsFillTelephoneFill, BsInstagram, BsTelephone } from 'react-icons/bs'
@@ -20,22 +20,21 @@ const header= ({contacto, setContacto}) => {
                 </NavLink>
                 <FaBars className='bars'/>
                 <div className='navMenu'>
-                    <NavLink className={'navLink'} to="/about" activeStyle>
-                        About
-                    </NavLink>
-                    <NavLink className={'navLink'} to="/services" activeStyle>
+                    <NavLink className={'navLink'} to="/Servicios" activeStyle>
                         Servicios
                     </NavLink>
                     <p className={'navLink'} onClick={() => setContacto(true)}>
                         Contactos
                     </p>
-                    <NavLink className={'navLink'} to="/sign-up" activeStyle>
-                        Sign up
-                    </NavLink>
+                    <p className={'navLink'} to="/sign-up" activeStyle>
+                        Información
+                        <ul className='niveles_dropdown'>
+                            <Link to="/Alimentacion">Alimentacion</Link>
+                            <Link to="/Movimiento">Movimiento</Link>
+                            <Link to="/Descanso">Descanso</Link>
+                        </ul>
+                    </p>
                 </div>
-                <nav className='navBtn'>
-                    <NavLink className={'navBtnLink'} to="/signin">Sign in</NavLink>
-                </nav>
             </nav>
 
             {/* Formulario de contacto */}
