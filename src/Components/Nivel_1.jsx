@@ -83,7 +83,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>titulo</h5>
+                        <h5>Calorías</h5>
                         <br /><hr /><br />
                         <p>CALORÍA (cal) Es una unidad de energía; cantidad de calor necesario para elevar la temperatura de 1 gramo de agua en 1°C, (de 14,5 ºC a 15,5 ºC). También se la llamada "caloría-gramo" o "caloría pequeña". Una variante empleada en nutrición es sustituir la cantidad de agua referida por 1 kg. A esta variante basada en kilogramo se la llama "kilocaloría (kcal)" o "caloría grande". Caloría (Cal; con «C» mayúscula). Por lo tanto, 1 kilocaloría (kcal) = 1000 calorías (cal). . En nuestro día a día necesitamos un aporte continuo de ENERGÍA para: • llevar a cabo todas nuestras funciones vitales; cardíaca, nerviosa, digestiva, respiratoria, reproductiva, etc. • realizar trabajo muscular, desarrollando; actividad y ejercicio físico. • producir procesos biosintéticos relacionados con el crecimiento y reparación de tejidos. • mantener la temperatura corporal. Etc. La energía que necesitamos para poder llevar a cabo todo esto es suministrada por los alimentos que consumimos.</p>
                         <br />
@@ -98,7 +98,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
                     </div>
                     <div className="info">
                         <hr /><br />
-                        <h5>titulo</h5>
+                        <h5>Macro y Micro nutrientes</h5>
                         <br /><hr /><br />
                         <p>NUTRIENTES Son sustancias contenidas en alimentos. Los requeridos en grandes cantidades son llamados MACROnutrientes y los requeridos en cantidades pequeñas se les conoce como MICROnutrientes. MACRONUTRIENTES: Proporcionan energía al organismo. Además, sirven para reparar y construir estructuras, promover el crecimiento y regular procesos metabólicos. Este grupo está constituido por: • Proteínas • Grasas • Hidratos de Carbono MICRONUTRIENTES: Permiten el desarrollo de procesos metabólicos, previenen infecciones y contribuyen al crecimiento (son necesarios para el mantenimiento de la salud) y no producen energía como los macronutrientes. Aquí encontramos: • Vitaminas • Minerales</p>
                         <br />
