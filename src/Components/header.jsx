@@ -7,7 +7,7 @@ import { FaBars, FaTiktok } from 'react-icons/fa'
 import { AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 import { PiTiktokLogo } from 'react-icons/pi'
 import logo from '../img/SDN_logo_small.jpg'
-import profileImg from '../img/borquez.png'
+import profileImg from '../img/borquez.jpeg'
 
 
 
@@ -21,16 +21,16 @@ const header= ({contacto, setContacto}) => {
                 <FaBars className='bars'/>
                 <div className='navMenu'>
                     <NavLink className={'navLink'} to="/about" activeStyle>
-                        About                   
+                        About
                     </NavLink>
                     <NavLink className={'navLink'} to="/services" activeStyle>
-                        Services                 
+                        Servicios
                     </NavLink>
-                    <NavLink className={'navLink'} to="/contact" activeStyle onClick={() => setContacto(true)}>
-                        Contact                   
-                    </NavLink>
+                    <p className={'navLink'} to="/contact" activeStyle onClick={() => setContacto(true)}>
+                        Contactos
+                    </p>
                     <NavLink className={'navLink'} to="/sign-up" activeStyle>
-                        Sign up                
+                        Sign up
                     </NavLink>
                 </div>
                 <nav className='navBtn'>
