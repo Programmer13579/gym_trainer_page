@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import "../Styles/niveles.css"
+import { Link } from 'react-router-dom';
 import { prevImage, nextImage, scrollToSection } from './main'
 import imagen1 from "../img/Alimentacion_1.jpg"
 import imagen2 from "../img/Alimentacion_2.jpg"
 import imagen3 from "../img/Alimentacion_3.jpg"
 import imagen4 from "../img/Alimentacion_4.jpg"
 import imagen5 from "../img/Alimentacion_5.jpg"
-import imagen6 from "../img/Alimentacion_7.png"
-import imagen7 from "../img/Alimentacion_8.png"
-import imagen8 from "../img/Alimentacion_9.jpg"
-import { Link } from 'react-router-dom';
+import imagen6 from "../img/Alimentacion_6.png"
+import imagen7 from "../img/Alimentacion_7.png"
+import imagen8 from "../img/Alimentacion_8.jpg"
 import { FaDumbbell } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Nivel_1 = ({SECTION_NIVEL}) => {
-    const images1 = [imagen1, imagen2, imagen3, imagen4, imagen5];
+    const images1 = [imagen1, imagen2, imagen3, imagen4, imagen8];
     const [animation1, setAnimation1] = useState(0);
     const [timeInterval1, setTimeInterval1] = useState(10000);
 
@@ -64,7 +64,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen6} alt="" />
+                        <img src={imagen5} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
@@ -79,7 +79,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen7} alt="" />
+                        <img src={imagen6} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
@@ -94,7 +94,7 @@ const Nivel_1 = ({SECTION_NIVEL}) => {
             <div className='level_container'>
                 <div className="datos">
                     <div className="imagen">
-                        <img src={imagen8} alt="" />
+                        <img src={imagen7} alt="" />
                     </div>
                     <div className="info">
                         <hr /><br />
