@@ -44,9 +44,8 @@ const footer = () => {
                     <center>
                         <a href="https://www.facebook.com/manuel.borquez.9638?locale=es_LA"><FaFacebook/></a>
                         <a href="https://www.instagram.com/sdngym15/"><BsInstagram/></a>
-                        <a href="#"><BiLogoGmail /></a>
+                        <a href="mailto:manumborquez@gmail.com"><BiLogoGmail /></a>
                         <a href="https://wa.me/+5493865266434"><BsWhatsapp/></a>
-                        <a href="#"><BsYoutube/></a>
                     </center>
                 </div>
                 <center> <p className="name desaparecer" ref={element_9}><span> Developed by | Ligth & Soft &copy; 2023  |</span></p> </center>
