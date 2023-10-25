@@ -26,7 +26,7 @@ const header= ({contacto, setContacto}) => {
                     <NavLink className={'navLink'} to="/services" activeStyle>
                         Servicios
                     </NavLink>
-                    <p className={'navLink'} to="/contact" activeStyle onClick={() => setContacto(true)}>
+                    <p className={'navLink'} onClick={() => setContacto(true)}>
                         Contactos
                     </p>
                     <NavLink className={'navLink'} to="/sign-up" activeStyle>
