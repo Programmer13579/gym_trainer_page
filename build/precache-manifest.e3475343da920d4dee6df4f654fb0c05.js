@@ -20,35 +20,35 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/main.468faee4.chunk.js"
   },
   {
-    "revision": "5a82fb3d16f4ee5f8457",
-    "url": "/gym_trainer_page/static/js/runtime~main.57950ca5.js"
+    "revision": "12ac8966f3a323922857",
+    "url": "/gym_trainer_page/static/js/runtime~main.c4cc797b.js"
   },
   {
     "revision": "e097da4aa51faf837a6f",
     "url": "/gym_trainer_page/static/js/5.ea525009.chunk.js"
   },
   {
-    "revision": "394253d5f7319c883fe2",
-    "url": "/gym_trainer_page/static/css/6.ac7acaa6.chunk.css"
+    "revision": "1ce3f3d487529a4dd994",
+    "url": "/gym_trainer_page/static/css/6.9d428575.chunk.css"
   },
   {
-    "revision": "394253d5f7319c883fe2",
+    "revision": "1ce3f3d487529a4dd994",
     "url": "/gym_trainer_page/static/js/6.2a9880f5.chunk.js"
   },
   {
-    "revision": "407c07d9d9748e9f1b55",
-    "url": "/gym_trainer_page/static/css/7.ac7acaa6.chunk.css"
+    "revision": "0f52daeb93f57781cc03",
+    "url": "/gym_trainer_page/static/css/7.9d428575.chunk.css"
   },
   {
-    "revision": "407c07d9d9748e9f1b55",
+    "revision": "0f52daeb93f57781cc03",
     "url": "/gym_trainer_page/static/js/7.c239c203.chunk.js"
   },
   {
-    "revision": "9145d706c851508a0887",
-    "url": "/gym_trainer_page/static/css/8.ac7acaa6.chunk.css"
+    "revision": "4ab57447eb6d9a4bfa42",
+    "url": "/gym_trainer_page/static/css/8.9d428575.chunk.css"
   },
   {
-    "revision": "9145d706c851508a0887",
+    "revision": "4ab57447eb6d9a4bfa42",
     "url": "/gym_trainer_page/static/js/8.302c0d7d.chunk.js"
   },
   {
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/9.e22eeae2.chunk.js"
   },
   {
-    "revision": "8a39e8f00649b2f5b3c7",
-    "url": "/gym_trainer_page/static/css/10.4bbc08c8.chunk.css"
+    "revision": "8c4c1f53da950fe5ecfa",
+    "url": "/gym_trainer_page/static/css/10.10e3afc5.chunk.css"
   },
   {
-    "revision": "8a39e8f00649b2f5b3c7",
-    "url": "/gym_trainer_page/static/js/10.a9ad7bf0.chunk.js"
+    "revision": "8c4c1f53da950fe5ecfa",
+    "url": "/gym_trainer_page/static/js/10.854dbd00.chunk.js"
   },
   {
     "revision": "03552575644c41a9dbcf",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/media/airelibre3.6ba77642.jpeg"
   },
   {
-    "revision": "08055cc992ea1d8c2e37670c02c3fb65",
+    "revision": "044c72cf660a5fa7814676a58b08e83b",
     "url": "/gym_trainer_page/index.html"
   }
 ];

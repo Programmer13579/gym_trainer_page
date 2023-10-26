@@ -75,6 +75,9 @@
     margin-right: 0;
     width: 70%;
 }
+.info hr{
+    border: solid 1px;
+}
 .info > p, .info > h4{
     width: 90%;
     max-width: 840px;
