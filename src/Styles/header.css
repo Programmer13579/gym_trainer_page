@@ -2,10 +2,14 @@
     color:#fff;
     display:flex;
     align-items:center;
-    text-decoration:none;
     padding: 0 1rem;
-    height: 100%;
     cursor: pointer;
+    margin: 0;
+    height: 100%;
+}
+.navLink:hover{
+    text-decoration: none;
+    color: #15cdfc;
 }
 .navLink.active {
     color: #15cdfc;
@@ -31,7 +35,7 @@
     align-items:center;
     justify-content: center;
     margin-right: -24px;
-    width: 100%;
+    width: calc(100% - 82px);
 }
 .navMenu p ul{
     display: none;
@@ -44,30 +48,12 @@
     text-decoration: none;
     color: #000;
 }
-.navMenu p ul a:hover{
-    color: #15cdfc;
-}
 .navMenu p:hover ul{
     display: flex;
     flex-direction: column;
 }
-.navBtn{
-    display:flex;
-    align-items:center;
-    margin-right:24px;
-}
-.navBtnLink{
-    border-radius: 4px;
-    padding: 10px 22px;
-    color: #fff;
-    border:none;
-    outline:none;
-    cursor: pointer;
-    text-decoration:none;
-}
-.navBtnLink:hover {
-    background: #fff;
-    color:#010606;
+.navMenu p ul a:hover{
+    color: #15cdfc;
 }
 
 

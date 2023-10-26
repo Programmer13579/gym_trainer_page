@@ -1,9 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import "../Styles/main.css"
-// import sliderImg1 from '../img/sliderImg1.jpeg'
-// import sliderImg2 from '../img/sliderImg2.jpg'
-// import sliderImg3 from '../img/sliderImg3.webp'
-// import sliderImg4 from '../img/sliderImg4.jpg'
 import sliderImg1 from '../img/sliderImg1.jpg'
 import sliderImg2 from '../img/sliderImg2.jpg'
 import sliderImg3 from '../img/sliderImg3.jpg'
@@ -78,8 +74,8 @@ const main = ({setContacto}) => {
                     </div>
                     )}
                 </div>
-                <button className="container_btn slider_btn_left" id='sliderbtnLeft' disabled={!activeButton} onClick={() => prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)}><IoIosArrowBack className='arrow_icon'/></button>
-                <button className="container_btn slider_btn_right" id='sliderbtnRight' disabled={!activeButton} onClick={() => nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1)}><IoIosArrowForward className='arrow_icon'/></button>
+                <button className="container_btn slider_btn_left" id='sliderbtnLeft' disabled={!activeButton} onClick={() => {prevImage(15000, setTimeInterval1, animation1, setAnimation1, images_1); sliderTextAnimation();}}><IoIosArrowBack className='arrow_icon'/></button>
+                <button className="container_btn slider_btn_right" id='sliderbtnRight' disabled={!activeButton} onClick={() => {nextImage(15000, setTimeInterval1, animation1, setAnimation1, images_1); sliderTextAnimation();}}><IoIosArrowForward className='arrow_icon'/></button>
                 
                 <div className="container_info_trainer">
                     <div className="info_trainer">

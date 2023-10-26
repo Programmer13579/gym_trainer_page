@@ -3,8 +3,7 @@ import "../Styles/footer.css"
 import {FaFacebook} from 'react-icons/fa';    
 import {BsInstagram} from 'react-icons/bs';     
 import {BiLogoGmail} from 'react-icons/bi';   
-import {BsWhatsapp} from 'react-icons/bs';                                                         
-import {BsYoutube} from 'react-icons/bs';
+import {BsWhatsapp} from 'react-icons/bs';
 import { useScrollEffect } from './AnimatedElement'
 
 const footer = () => {
