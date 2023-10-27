@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import '../Styles/header.css'
 import { IoLogoWhatsapp } from 'react-icons/io'
@@ -6,32 +6,36 @@ import { BsFillTelephoneFill, BsInstagram, BsTelephone } from 'react-icons/bs'
 import { FaBars, FaTiktok } from 'react-icons/fa'
 import { AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 import { PiTiktokLogo } from 'react-icons/pi'
+
 import logo from '../img/SDN_logo_small.jpg'
 import profileImg from '../img/borquez.jpeg'
 
 
 
 const header= ({contacto, setContacto}) => {
+
+    const [responsiveNav, setResponsiveNav] = useState(false)
     return (
         <>
             <nav className='nav'>
                 <NavLink className={'navLink'} to="/">
                     <img src={logo} alt="logo" className='logoSmall'/>
                 </NavLink>
-                <FaBars className='bars'/>
-                <div className='navMenu'>
-                    <NavLink className={'navLink'} to="/Servicios" activeStyle>
+                <FaBars className='bars' onClick={() => setResponsiveNav(true)}/>
+                <div className={`navMenu ${responsiveNav? 'activeNavmenu' : ''}`}>
+                    <AiOutlineClose className='Hicon_close closeNavmenu' onClick={() => setResponsiveNav(false)}/>
+                    <NavLink className={'navLink'} to="/Servicios" activeStyle onClick={() => setResponsiveNav(false)}>
                         Servicios
                     </NavLink>
-                    <p className={'navLink'} onClick={() => setContacto(true)}>
+                    <p className={'navLink'} onClick={() => {setContacto(true); setResponsiveNav(false)}}>
                         Contactos
                     </p>
                     <p className={'navLink'} to="/sign-up" activeStyle>
                         Información
-                        <ul className='niveles_dropdown'>
-                            <Link to="/Alimentacion">Alimentacion</Link>
-                            <Link to="/Movimiento">Movimiento</Link>
-                            <Link to="/Descanso">Descanso</Link>
+                        <ul>
+                            <Link to="/Alimentacion" onClick={() => setResponsiveNav(false)}>Alimentacion</Link>
+                            <Link to="/Movimiento" onClick={() => setResponsiveNav(false)}>Movimiento</Link>
+                            <Link to="/Descanso" onClick={() => setResponsiveNav(false)}>Descanso</Link>
                         </ul>
                     </p>
                 </div>
