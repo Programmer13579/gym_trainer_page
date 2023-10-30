@@ -34,7 +34,7 @@ const nivel_selección = () => {
                 <LiaDumbbellSolid className='icon_selector'/>
             </div>
             <div>
-                <h2 className='desaparecer' ref={element_1}>Información útil</h2>
+                <h2 className='desaparecer' ref={element_1}>Información Nutricional</h2>
                     
                 <div className="button_seleccion">
                     <Link className="button_level btn_seleccion desaparecer" to="Alimentacion" ref={element_2} >Alimentacion</Link>

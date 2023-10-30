@@ -283,7 +283,9 @@
     align-items: center;
     text-align: center;
 }
-
+.closeNavmenu{
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .bars{
         display:block;
@@ -298,32 +300,28 @@
     .navMenu {
         background-color: #0c0d0e;
         position: fixed;
-        height: 100% ;
+        height: 100vh ;
         width: 100%;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         z-index: 10;
-        top: -100%;
+        top: -100vh;
         transition: 0.8s;
-        
-
-
     }
     .activeNavmenu{
         top: 0;
-
     }
     .closeNavmenu {
+        display: block;
         top: 20px;  
         right: 20px;        
         text-align: right;
         margin: 0 0 0 auto;
         width: 40px;
         height: 40px;   
-        color: #fff; 
-
+        color: #fff;
     }
     .navMenu a,.navMenu p {
         text-decoration: none;

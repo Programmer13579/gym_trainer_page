@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/main.468faee4.chunk.js"
   },
   {
-    "revision": "12ac8966f3a323922857",
-    "url": "/gym_trainer_page/static/js/runtime~main.c4cc797b.js"
+    "revision": "1719558eb009e2ea6c2b",
+    "url": "/gym_trainer_page/static/js/runtime~main.a18aafe4.js"
   },
   {
     "revision": "e097da4aa51faf837a6f",
@@ -68,12 +68,12 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/10.854dbd00.chunk.js"
   },
   {
-    "revision": "03552575644c41a9dbcf",
-    "url": "/gym_trainer_page/static/css/11.caa47c29.chunk.css"
+    "revision": "363215a16e40d0b9e564",
+    "url": "/gym_trainer_page/static/css/11.7c5cf3d9.chunk.css"
   },
   {
-    "revision": "03552575644c41a9dbcf",
-    "url": "/gym_trainer_page/static/js/11.9e27ff75.chunk.js"
+    "revision": "363215a16e40d0b9e564",
+    "url": "/gym_trainer_page/static/js/11.00ef0e4e.chunk.js"
   },
   {
     "revision": "136b96abd79da5ece3c1",
@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/js/12.0a64a99a.chunk.js"
   },
   {
-    "revision": "2d762f0d932ad9c27890",
+    "revision": "ef28d1ec11314772e03f",
     "url": "/gym_trainer_page/static/css/13.17534b8f.chunk.css"
   },
   {
-    "revision": "2d762f0d932ad9c27890",
-    "url": "/gym_trainer_page/static/js/13.ce2a2119.chunk.js"
+    "revision": "ef28d1ec11314772e03f",
+    "url": "/gym_trainer_page/static/js/13.bdf6456a.chunk.js"
   },
   {
     "revision": "0d4d5abb9e78b79276de",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "/gym_trainer_page/static/media/airelibre3.6ba77642.jpeg"
   },
   {
-    "revision": "044c72cf660a5fa7814676a58b08e83b",
+    "revision": "f9aa5a82159d92dec54c2f9f195f2b1c",
     "url": "/gym_trainer_page/index.html"
   }
 ];
