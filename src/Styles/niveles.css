@@ -4,7 +4,7 @@
     text-align: center;
 }
 .level_principal > h2{
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     color: rgb(10, 200, 238);
     text-align: center;
     width: max-content;
@@ -127,5 +127,13 @@
     }
     .info{
         width: 100%;
+    }
+}
+@media screen and (max-width: 370px) {
+    .level_principal > h2{
+        font-size: 2.5rem;
+    }
+    .dumbbell{
+        display: none;
     }
 }

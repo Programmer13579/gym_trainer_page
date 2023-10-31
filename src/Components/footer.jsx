@@ -52,7 +52,7 @@ const footer = () => {
             <div className="footer-center col-md-4 col-sm-6">
                 <h3 className='desaparecer' ref={element_3}>Contactame</h3>
                 <p className='desaparecer' ref={element_4}>Aguilares, Tucuman</p>
-                <p className='desaparecer' ref={element_5}>(+54) 3865-266434</p>
+                <p className='desaparecer' ref={element_5}><a href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer">(+54 9) 3865-266434</a></p>
                 <p className='desaparecer' ref={element_6}> manumborquez@gmail.com</p>
             </div>
            

@@ -12,7 +12,7 @@
     padding:0;
 }
 html{
-    font-size: clamp(12px,.8rem + .25vw,16px);
+    font-size: clamp(12px, .8rem + .25vw, 16px);
 }
 body{
     margin: 0;

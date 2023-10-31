@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import '../Styles/header.css'
 import { IoLogoWhatsapp } from 'react-icons/io'
-import { BsFillTelephoneFill, BsInstagram, BsTelephone } from 'react-icons/bs'
+import { BsFillTelephoneFill, BsTelephone } from 'react-icons/bs'
 import { FaBars, FaTiktok } from 'react-icons/fa'
-import { AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineInstagram, AiOutlineWhatsApp, AiFillInstagram } from 'react-icons/ai'
 import { PiTiktokLogo } from 'react-icons/pi'
+import { FaHandPointer } from 'react-icons/fa6'
 
 import logo from '../img/SDN_logo_small.jpg'
 import profileImg from '../img/borquez.jpeg'
@@ -59,7 +60,7 @@ const header= ({contacto, setContacto}) => {
                         <li className='contactos'><a href="https://api.whatsapp.com/send?phone=3865-266434&text=Hola, estoy interesado en contratar tu servicio de entrenador personal" target='_blank' rel="noopener noreferrer"><IoLogoWhatsapp className='iconContact'/>WhatsApp</a></li>
                         {/* Redirigimos a la aplicación de telefono con el numero de la empresa ingresado para poder llamar o agregar el contacto */}
                         <li className='contactos'><a href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer"><BsFillTelephoneFill className='iconContact'/>+54 9 3865-266434</a></li>
-                        <li className='contactos'><a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer"><BsInstagram className='iconContact'/>@sdngym15</a></li>
+                        <li className='contactos'><a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer"><AiFillInstagram className='iconContact'/>@sdngym15</a></li>
                     </ul>
 
                     <div class="container_index">
@@ -69,8 +70,8 @@ const header= ({contacto, setContacto}) => {
                             </div>
                             <ul class="social-icons">
                                 <li>
-                                    <a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer" title="Instagram">
-                                        <AiOutlineInstagram/>
+                                    <a href="https://www.tiktok.com/@manumborquez" target='_blank' rel="noopener noreferrer" title="Tiktok">
+                                        <PiTiktokLogo/>
                                     </a>
                                 </li>
                                 <li>
@@ -79,13 +80,13 @@ const header= ({contacto, setContacto}) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.tiktok.com/@manumborquez" target='_blank' rel="noopener noreferrer" title="Tiktok">
-                                        <PiTiktokLogo/>
+                                    <a href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer" title="Celular">
+                                        <BsTelephone/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:+5493865-266434" target='_blank' rel="noopener noreferrer" title="Celular">
-                                        <BsTelephone/>
+                                    <a href="https://www.instagram.com/sdngym15/" target='_blank' rel="noopener noreferrer" title="Instagram">
+                                        <AiOutlineInstagram/>
                                     </a>
                                 </li>
                             </ul>
@@ -93,7 +94,7 @@ const header= ({contacto, setContacto}) => {
                                 <h2>Manuel Borquez</h2>
                                 <div class="profile-bio">Entrenador personal. Estudiante de Educación Fisica. Estudiante de Kinesiologia.</div>
                             </div>
-                            <h2 className='quien_soy'>¿Quien soy?</h2>
+                            <h2 className='quien_soy'>¿Quien soy?<FaHandPointer/></h2>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 .navLink{
+    user-select: none;
     color:#fff;
     display:flex;
     align-items:center;
@@ -11,11 +12,9 @@
 .navLink:hover{
     text-decoration: none;
     color: #15cdfc;
-    
 }
 .navLink.active {
     color: #15cdfc;
-    
 }
 .nav{
     background: #000;
@@ -42,25 +41,29 @@
 }
 .navMenu p ul{
     display: none;
+    flex-direction: column;
+    user-select: none;
     position: absolute;
     top: 80px;
+    transform: translateX(-20px);
     z-index: 100;
     background-color: #000;
     color: #fff;
-
+    border-radius: 0 0 15px 15px;
+    padding: 0 20px;
+    cursor: default;
 }
 .navMenu p ul a{
     text-decoration: none;
-    color: #ffffff;
-    margin-top: 20px;
-}
-.navMenu p ul a:hover{
-    transform: scale(0.9);
-    transition: 0.8s;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .navMenu p:hover ul{
     display: flex;
-    flex-direction: column;
 
 }
 .navMenu p ul a:hover{
@@ -126,10 +129,10 @@
     right: 10px;
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 .Hicon_close:hover{
     color: red;
-    cursor: pointer;
 }
 .contactanos{
     list-style: none;
@@ -141,6 +144,10 @@
 .contactos a{
     color: #000;
     text-decoration: none;
+    display: flex;
+}
+.contactos:nth-child(4) a .iconContact{
+    font-size: 1.5rem;
 }
 .iconContact{
     margin-right: 5px;
@@ -162,7 +169,6 @@
     100%{transform: translateY(-30px);
     Color: transparent;}
 }
-
 .container_index{
     width: 100%;
 }
@@ -181,7 +187,6 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
 }
 .profile .profile-image{
     position: absolute;
@@ -279,24 +284,25 @@
     color: #fff;
     transition: all .6s;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.quien_soy svg{
+    rotate: -20deg;
 }
 .closeNavmenu{
     display: none;
 }
 @media screen and (max-width: 768px) {
     .bars{
-        display:block;
-        position:absolute;
-        top:0;
-        right:0;
-        transform: translate(-100%,75%);
-        font-size:1.8rem;
+        display: block;
+        margin: auto;
+        margin-right: 20px;
+        font-size: 2.2rem;
         cursor:pointer;
     }
-    
     .navMenu {
         background-color: #0c0d0e;
         position: fixed;
@@ -335,17 +341,15 @@
     .navMenu p ul {
         background-color: #0c0d0e;
         top: 120px;
-        height: 120px;
-    
+        height: max-content;
+        transform: translateX(0);
+        padding: 0;
     }
-    .navMenu p:hover  {
-        transform: scale(0.9);
-        transition: 0.8s;
-    }
-
-    .navLink:hover {
-        transform: scale(0.9);
-        transition: 0.8s;
+    .navMenu p ul a{
+        height: 50px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
     .navMenu p ul a {
         color: #fff;
